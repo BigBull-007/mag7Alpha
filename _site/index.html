@@ -107,8 +107,14 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -132,11 +138,75 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Hey! This is our website</p>
-<p>Manoj and Patrick. Market making</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+<p>Walk us through a single trade. Entry signal / exit signal, plus other rules like stop-loss. Our strategy is market-making on the Mag7 stocks, which includes Alphabet, Amazon, Apple, Meta, Microsoft, NVDIA, and Tesla. For this example, we will choose Microsoft. We will use the Stoikov market-making strategy, so we will need two main equations: The first calculates the reservation price based on the equation:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Equation.png" class="img-fluid figure-img"></p>
+<figcaption>Reservation Price</figcaption>
+</figure>
+</div>
+<p>s = current market mid price q = quantity of assets in inventory of base asset (could be positive/negative for long/short positions) σ = market volatility T = closing time, when the measurement period ends (conveniently normalized to 1) t = current time (T is normalized = 1, so t is a time fraction)</p>
+<p>The second sets optimal bid-ask spread using the equation:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="BidaskSpread.png" class="img-fluid figure-img"></p>
+<figcaption>Optimal Bid-Ask Spread</figcaption>
+</figure>
+</div>
+<p>σ = market volatility T = closing time, when the measurement period ends (conveniently normalized to 1) t = current time (T is normalized = 1, so t is a time fraction) δa, δb = bid/ask spread, symmetrical → δa=δb γ = inventory risk aversion parameter κ = order book liquidity parameter</p>
+<p>Entry conditions: We want to create symmetrical bid and ask orders around the market mid-price, but this could lead to the inventory skewing in one direction if there are significant market movements in one direction. The reference price is where the buy and sell orders will be created around.</p>
+<p>Can run a few different γ (risk aversion parameter) to determine optimal for P&amp;L.</p>
+<p>After calculating reservation price and optimal bid ask spreads: Bid offer price = reservation price — optimal spread / 2 Ask offer price = reservation price + optimal spread / 2</p>
+<p>We then enter into limit orders on both sides of this quote.</p>
+<p>Exit conditions: As the trading day goes on, each parameter of the models will change, and new values for reservation price and optimal spreads will be calculated. We then set new orders based on the new parameters. This cycle continues indefinitely until the end of our backtesting period.</p>
+<p>Stop Loss: We will use average true range (ATR) to set a stop loss, around 1.5x or 2x ATR. This adjusts our stop loss based on volatility.</p>
+<p>Higher ATR → Widen stops to avoid noise and premature execution. Lower ATR → Tighten stops to lock in profits and exit in cases of volatility spikes.</p>
+<p>Data: We can use ShinyBroker to obtain most of the assets’ attributes, such as price throughout the day, volatility, and timing, via fetch_historical_data. We also need to get technical indicators like ATR, which we can use an external Python library for, like Technical Analysis’ ta.volatility.AverageTrueRange().</p>
+<p>Here are the 7 stocks that we trade and their tickers. from IPython.display import Markdown from tabulate import tabulate</p>
+<section id="section" class="level1">
+<h1></h1>
+<table class="caption-top table">
+<caption>Mag7 stocks: Company Name, Ticker Symbol</caption>
+<thead>
+<tr class="header">
+<th>Company Name</th>
+<th style="text-align: left;">Ticker Symbol</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Apple</td>
+<td style="text-align: left;">AAPL</td>
+</tr>
+<tr class="even">
+<td>Microsoft</td>
+<td style="text-align: left;">MSFT</td>
+</tr>
+<tr class="odd">
+<td>Amazon</td>
+<td style="text-align: left;">AMZN</td>
+</tr>
+<tr class="even">
+<td>Alphabet (Google)</td>
+<td style="text-align: left;">GOOGL</td>
+</tr>
+<tr class="odd">
+<td>Meta Platforms</td>
+<td style="text-align: left;">META</td>
+</tr>
+<tr class="even">
+<td>Nvidia</td>
+<td style="text-align: left;">NVDA</td>
+</tr>
+<tr class="odd">
+<td>Tesla</td>
+<td style="text-align: left;">TSLA</td>
+</tr>
+</tbody>
+</table>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
