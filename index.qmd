@@ -5,6 +5,5 @@ title: "mag7Alpha"
 Hey! This is our website
 
 Manoj and Patrick
-We have a market-making strategy.
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
