@@ -4,4 +4,6 @@ title: "mag7Alpha"
 
 Hey! This is our website
 
+Manoj and Patrick
+
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
