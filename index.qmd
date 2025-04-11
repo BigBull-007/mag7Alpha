@@ -1,6 +1,8 @@
 ---
-title: "mag7Alpha"
+
 ---
+
+### **mag7Alpha** {.test}
 
 Walk us through a single trade. Entry signal / exit signal, plus other rules like stop-loss.
 Our strategy is market-making on the Mag7 stocks, which includes Alphabet, Amazon, Apple, Meta, Microsoft, NVDIA, and Tesla. For this example, we will choose Microsoft. We will use the Stoikov market-making strategy, so we will need two main equations:

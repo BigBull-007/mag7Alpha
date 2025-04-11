@@ -112,32 +112,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a></li>
+  <li><a href="#mag7alpha" id="toc-mag7alpha" class="nav-link active" data-scroll-target="#mag7alpha"><strong>mag7Alpha</strong></a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">mag7Alpha</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
+<hr>
+<hr>
+<section id="mag7alpha" class="level3 test">
+<h3 class="test anchored" data-anchor-id="mag7alpha"><strong>mag7Alpha</strong></h3>
 <p>Walk us through a single trade. Entry signal / exit signal, plus other rules like stop-loss. Our strategy is market-making on the Mag7 stocks, which includes Alphabet, Amazon, Apple, Meta, Microsoft, NVDIA, and Tesla. For this example, we will choose Microsoft. We will use the Stoikov market-making strategy, so we will need two main equations: The first calculates the reservation price based on the equation:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -163,6 +152,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Higher ATR → Widen stops to avoid noise and premature execution. Lower ATR → Tighten stops to lock in profits and exit in cases of volatility spikes.</p>
 <p>Data: We can use ShinyBroker to obtain most of the assets’ attributes, such as price throughout the day, volatility, and timing, via fetch_historical_data. We also need to get technical indicators like ATR, which we can use an external Python library for, like Technical Analysis’ ta.volatility.AverageTrueRange().</p>
 <p>Here are the 7 stocks that we trade and their tickers. from IPython.display import Markdown from tabulate import tabulate</p>
+</section>
 <section id="section" class="level1">
 <h1></h1>
 <table class="caption-top table">
