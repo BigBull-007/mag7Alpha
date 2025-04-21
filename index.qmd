@@ -1,5 +1,12 @@
 ---
-
+title: "Mag7Alpha"
+format:
+  html:
+    engine: jupyter
+execute:
+  echo: true
+  eval: true
+jupyter: python3
 ---
 
 ### **mag7Alpha** {.test}
@@ -52,8 +59,7 @@ Data:
 We can use ShinyBroker to obtain most of the assets’ attributes, such as price throughout the day, volatility, and timing, via fetch_historical_data. We also need to get technical indicators like ATR, which we can use an external Python library for, like Technical Analysis’ ta.volatility.AverageTrueRange().
 
 Here are the 7 stocks that we trade and their tickers.
-from IPython.display import Markdown
-from tabulate import tabulate
+
 
 #
 | Company Name | Ticker Symbol |
@@ -67,3 +73,22 @@ from tabulate import tabulate
 | Tesla              | TSLA   |
 
 : Mag7 stocks: Company Name, Ticker Symbol
+
+
+### Blotter:
+```{python}
+#| echo: false
+import pandas as pd
+from itables import show
+import itables.options as opt
+
+opt.mode = "inline"
+
+# Read the blotter CSV
+blotter = pd.read_csv("blotter.csv")
+
+show(blotter)
+
+```
+
+### Ledger:
