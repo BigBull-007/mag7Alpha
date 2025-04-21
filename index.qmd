@@ -92,3 +92,17 @@ show(blotter)
 ```
 
 ### Ledger:
+```{python}
+#| echo: false
+import pandas as pd
+from itables import show
+import itables.options as opt
+
+opt.mode = "inline"
+
+# Read the ledger CSV
+ledger = pd.read_csv("ledger.csv")
+
+show(ledger)
+
+```
