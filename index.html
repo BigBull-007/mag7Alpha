@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.43">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Mag7Alpha – mag7Alpha</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-ddd961a2510921635943dfbbd19534c4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">mag7Alpha</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#mag7alpha" id="toc-mag7alpha" class="nav-link active" data-scroll-target="#mag7alpha"><strong>mag7Alpha</strong></a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a>
+  <ul class="collapse">
+  <li><a href="#blotter" id="toc-blotter" class="nav-link" data-scroll-target="#blotter">Blotter:</a></li>
+  <li><a href="#ledger" id="toc-ledger" class="nav-link" data-scroll-target="#ledger">Ledger:</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Mag7Alpha</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="mag7alpha" class="level3 test">
+<h3 class="test anchored" data-anchor-id="mag7alpha"><strong>mag7Alpha</strong></h3>
+<p>Walk us through a single trade. Entry signal / exit signal, plus other rules like stop-loss. Our strategy is market-making on the Mag7 stocks, which includes Alphabet, Amazon, Apple, Meta, Microsoft, NVDIA, and Tesla. For this example, we will choose Microsoft. We will use the Stoikov market-making strategy, so we will need two main equations: The first calculates the reservation price based on the equation:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Equation.png" class="img-fluid figure-img"></p>
+<figcaption>Reservation Price</figcaption>
+</figure>
+</div>
+<p>s = current market mid price q = quantity of assets in inventory of base asset (could be positive/negative for long/short positions) σ = market volatility T = closing time, when the measurement period ends (conveniently normalized to 1) t = current time (T is normalized = 1, so t is a time fraction)</p>
+<p>The second sets optimal bid-ask spread using the equation:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="BidaskSpread.png" class="img-fluid figure-img"></p>
+<figcaption>Optimal Bid-Ask Spread</figcaption>
+</figure>
+</div>
+<p>σ = market volatility T = closing time, when the measurement period ends (conveniently normalized to 1) t = current time (T is normalized = 1, so t is a time fraction) δa, δb = bid/ask spread, symmetrical → δa=δb γ = inventory risk aversion parameter κ = order book liquidity parameter</p>
+<p>Entry conditions: We want to create symmetrical bid and ask orders around the market mid-price, but this could lead to the inventory skewing in one direction if there are significant market movements in one direction. The reference price is where the buy and sell orders will be created around.</p>
+<p>Can run a few different γ (risk aversion parameter) to determine optimal for P&amp;L.</p>
+<p>After calculating reservation price and optimal bid ask spreads: Bid offer price = reservation price — optimal spread / 2 Ask offer price = reservation price + optimal spread / 2</p>
+<p>We then enter into limit orders on both sides of this quote.</p>
+<p>Exit conditions: As the trading day goes on, each parameter of the models will change, and new values for reservation price and optimal spreads will be calculated. We then set new orders based on the new parameters. This cycle continues indefinitely until the end of our backtesting period.</p>
+<p>Stop Loss: We will use average true range (ATR) to set a stop loss, around 1.5x or 2x ATR. This adjusts our stop loss based on volatility.</p>
+<p>Higher ATR → Widen stops to avoid noise and premature execution. Lower ATR → Tighten stops to lock in profits and exit in cases of volatility spikes.</p>
+<p>Data: We can use ShinyBroker to obtain most of the assets’ attributes, such as price throughout the day, volatility, and timing, via fetch_historical_data. We also need to get technical indicators like ATR, which we can use an external Python library for, like Technical Analysis’ ta.volatility.AverageTrueRange().</p>
+<p>Here are the 7 stocks that we trade and their tickers.</p>
+</section>
+<section id="section" class="level1">
+<h1></h1>
+<table class="caption-top table">
+<caption>Mag7 stocks: Company Name, Ticker Symbol</caption>
+<thead>
+<tr class="header">
+<th>Company Name</th>
+<th style="text-align: left;">Ticker Symbol</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Apple</td>
+<td style="text-align: left;">AAPL</td>
+</tr>
+<tr class="even">
+<td>Microsoft</td>
+<td style="text-align: left;">MSFT</td>
+</tr>
+<tr class="odd">
+<td>Amazon</td>
+<td style="text-align: left;">AMZN</td>
+</tr>
+<tr class="even">
+<td>Alphabet (Google)</td>
+<td style="text-align: left;">GOOGL</td>
+</tr>
+<tr class="odd">
+<td>Meta Platforms</td>
+<td style="text-align: left;">META</td>
+</tr>
+<tr class="even">
+<td>Nvidia</td>
+<td style="text-align: left;">NVDA</td>
+</tr>
+<tr class="odd">
+<td>Tesla</td>
+<td style="text-align: left;">TSLA</td>
+</tr>
+</tbody>
+</table>
+<section id="blotter" class="level3">
+<h3 class="anchored" data-anchor-id="blotter">Blotter:</h3>
+<div id="172a225e" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
+<table id="itables_c08700d7_1c77_44f4_b7f4_adfd5d0d8ff6" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto;margin:auto;caption-side:bottom">
+<thead>
+    <tr style="text-align: right;">
+      
+      <th>timestamp</th>
+      <th>trade</th>
+      <th>fill_price</th>
+      <th>reservation_price</th>
+      <th>inventory</th>
+      <th>cash_position</th>
+      <th>portfolio_value</th>
+    </tr>
+  </thead><tbody><tr>
+<td style="vertical-align:middle; text-align:left">
+<a href="https://mwouts.github.io/itables/"><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="64" viewbox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
+    <g style="fill:#d9d7fc">
+        <path d="M100,400H500V357H100Z"></path>
+        <path d="M100,300H400V257H100Z"></path>
+        <path d="M0,200H400V157H0Z"></path>
+        <path d="M100,100H500V57H100Z"></path>
+        <path d="M100,350H500V307H100Z"></path>
+        <path d="M100,250H400V207H100Z"></path>
+        <path d="M0,150H400V107H0Z"></path>
+        <path d="M100,50H500V7H100Z"></path>
+    </g>
+    <g style="fill:#1a1366;stroke:#1a1366;">
+   <rect x="100" y="7" width="400" height="43">
+    <animate attributename="width" values="0;400;0" dur="5s" repeatcount="indefinite"></animate>
+      <animate attributename="x" values="100;100;500" dur="5s" repeatcount="indefinite"></animate>
+  </rect>
+        <rect x="0" y="107" width="400" height="43">
+    <animate attributename="width" values="0;400;0" dur="3.5s" repeatcount="indefinite"></animate>
+    <animate attributename="x" values="0;0;400" dur="3.5s" repeatcount="indefinite"></animate>
+  </rect>
+        <rect x="100" y="207" width="300" height="43">
+    <animate attributename="width" values="0;300;0" dur="3s" repeatcount="indefinite"></animate>
+    <animate attributename="x" values="100;100;400" dur="3s" repeatcount="indefinite"></animate>
+  </rect>
+        <rect x="100" y="307" width="400" height="43">
+    <animate attributename="width" values="0;400;0" dur="4s" repeatcount="indefinite"></animate>
+      <animate attributename="x" values="100;100;500" dur="4s" repeatcount="indefinite"></animate>
+  </rect>
+        <g style="fill:transparent;stroke-width:8; stroke-linejoin:round" rx="5">
+            <g transform="translate(45 50) rotate(-45)">
+                <circle r="33" cx="0" cy="0"></circle>
+                <rect x="-8" y="32" width="16" height="30"></rect>
+            </g>
+
+            <g transform="translate(450 152)">
+                <polyline points="-15,-20 -35,-20 -35,40 25,40 25,20"></polyline>
+                <rect x="-15" y="-40" width="60" height="60"></rect>
+            </g>
+
+            <g transform="translate(50 352)">
+                <polygon points="-35,-5 0,-40 35,-5"></polygon>
+                <polygon points="-35,10 0,45 35,10"></polygon>
+            </g>
+
+            <g transform="translate(75 250)">
+                <polyline points="-30,30 -60,0 -30,-30"></polyline>
+                <polyline points="0,30 -30,0 0,-30"></polyline>
+            </g>
+
+            <g transform="translate(425 250) rotate(180)">
+                <polyline points="-30,30 -60,0 -30,-30"></polyline>
+                <polyline points="0,30 -30,0 0,-30"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>
+</a>
+Loading ITables v2.3.0 from the internet...
+(need <a href="https://mwouts.github.io/itables/troubleshooting.html">help</a>?)</td>
+</tr></tbody>
+</table>
+<link href="https://www.unpkg.com/dt_for_itables@2.2.0/dt_bundle.css" rel="stylesheet">
+<script type="module">
+    import {DataTable, jQuery as $} from 'https://www.unpkg.com/dt_for_itables@2.2.0/dt_bundle.js';
+
+    document.querySelectorAll("#itables_c08700d7_1c77_44f4_b7f4_adfd5d0d8ff6:not(.dataTable)").forEach(table => {
+        if (!(table instanceof HTMLTableElement))
+            return;
+
+        // Define the table data
+        const data = [["2025-04-17 09:58:30", "SELL", 372.05, 372.07, -2, 372.05, -372.06], ["2025-04-17 10:11:00", "SELL", 370.68, 370.7, -3, 742.73, -369.235], ["2025-04-17 10:15:00", "SELL", 370.73, 370.73, -4, 1113.46, -369.38], ["2025-04-17 10:19:30", "SELL", 370.72, 370.72, -5, 1484.18, -369.32], ["2025-04-17 10:25:30", "SELL", 370.3, 370.32, -6, 1854.48, -367.29], ["2025-04-17 10:28:00", "SELL", 370.06, 370.07, -7, 2224.54, -365.88], ["2025-04-17 10:34:30", "SELL", 369.64, 369.64, -8, 2594.18, -362.66], ["2025-04-17 10:39:30", "SELL", 368.87, 368.88, -9, 2963.05, -356.645], ["2025-04-17 10:42:00", "SELL", 369.63, 369.64, -10, 3332.68, -363.52], ["2025-04-17 10:42:30", "BUY", 369.55, 369.54, -9, 2963.13, -362.685], ["2025-04-17 10:44:00", "SELL", 369.66, 369.67, -10, 3332.79, -363.81], ["2025-04-17 10:45:00", "BUY", 369.86, 369.84, -9, 2962.93, -365.585], ["2025-04-17 10:45:30", "SELL", 369.84, 369.84, -10, 3332.77, -365.63], ["2025-04-17 10:47:00", "BUY", 370.03, 370.01, -9, 2962.74, -367.305], ["2025-04-17 10:47:30", "BUY", 370.08, 370.04, -8, 2592.66, -367.66], ["2025-04-17 10:48:30", "BUY", 370.14, 370.13, -7, 2222.52, -368.39], ["2025-04-17 10:49:00", "SELL", 370.11, 370.11, -8, 2592.63, -368.25], ["2025-04-17 10:51:30", "BUY", 370.16, 370.16, -7, 2222.47, -368.545], ["2025-04-17 10:52:00", "BUY", 370.15, 370.15, -6, 1852.32, -368.55], ["2025-04-17 10:54:30", "BUY", 370.1, 370.07, -5, 1482.22, -368.08], ["2025-04-17 10:58:30", "SELL", 369.92, 369.93, -6, 1852.14, -367.41], ["2025-04-17 10:59:30", "BUY", 369.81, 369.78, -5, 1482.33, -366.57], ["2025-04-17 11:02:30", "BUY", 369.61, 369.59, -4, 1112.72, -365.62], ["2025-04-17 11:04:30", "BUY", 369.49, 369.49, -3, 743.23, -365.225], ["2025-04-17 11:10:00", "SELL", 371.3, 371.31, -4, 1114.53, -370.61], ["2025-04-17 11:11:00", "SELL", 371.71, 371.72, -5, 1486.24, -372.31], ["2025-04-17 11:13:30", "SELL", 371.64, 371.65, -6, 1857.88, -371.93], ["2025-04-17 11:16:00", "SELL", 371.55, 371.57, -7, 2229.43, -371.42], ["2025-04-17 11:19:30", "SELL", 372.11, 372.12, -8, 2601.54, -375.14], ["2025-04-17 11:21:00", "SELL", 371.67, 371.7, -9, 2973.21, -371.91], ["2025-04-17 11:25:30", "SELL", 371.25, 371.25, -10, 3344.46, -367.84], ["2025-04-17 11:28:30", "SELL", 370.6, 370.61, -11, 3715.06, -361.43], ["2025-04-17 11:29:30", "BUY", 370.45, 370.44, -10, 3344.61, -359.74], ["2025-04-17 11:32:00", "SELL", 371.16, 371.16, -11, 3715.77, -366.825], ["2025-04-17 11:34:30", "SELL", 371.36, 371.37, -12, 4087.13, -369.13], ["2025-04-17 11:35:30", "SELL", 370.86, 370.87, -13, 4457.99, -363.255], ["2025-04-17 11:39:30", "SELL", 371.46, 371.5, -14, 4829.45, -370.99], ["2025-04-17 11:40:30", "BUY", 371.57, 371.57, -13, 4457.88, -372.335], ["2025-04-17 11:41:30", "BUY", 371.3, 371.29, -12, 4086.58, -368.78], ["2025-04-17 11:43:00", "BUY", 370.97, 370.95, -11, 3715.61, -364.73], ["2025-04-17 11:44:30", "BUY", 370.77, 370.74, -10, 3344.84, -362.41], ["2025-04-17 11:46:00", "SELL", 370.57, 370.59, -11, 3715.41, -360.915], ["2025-04-17 11:47:00", "BUY", 370.84, 370.83, -10, 3344.57, -363.63], ["2025-04-17 11:50:00", "SELL", 370.5, 370.5, -11, 3715.07, -360.155], ["2025-04-17 11:53:30", "SELL", 370.68, 370.73, -12, 4085.75, -362.59], ["2025-04-17 11:56:30", "SELL", 371.08, 371.11, -13, 4456.83, -367.145], ["2025-04-17 11:57:00", "BUY", 371.13, 371.12, -12, 4085.7, -367.62], ["2025-04-17 11:58:00", "SELL", 370.9, 370.91, -13, 4456.6, -365.1], ["2025-04-17 11:58:30", "BUY", 370.9, 370.88, -12, 4085.7, -364.74], ["2025-04-17 11:59:00", "BUY", 370.84, 370.83, -11, 3714.86, -364.27], ["2025-04-17 11:59:30", "BUY", 370.84, 370.83, -10, 3344.02, -364.23], ["2025-04-17 12:00:30", "BUY", 371.11, 371.1, -9, 2972.91, -366.9], ["2025-04-17 12:01:30", "BUY", 371.0, 370.98, -8, 2601.91, -365.89], ["2025-04-17 12:02:30", "BUY", 370.99, 370.97, -7, 2230.92, -365.8], ["2025-04-17 12:04:30", "SELL", 370.7, 370.71, -8, 2601.62, -363.98], ["2025-04-17 12:09:30", "SELL", 372.19, 372.24, -9, 2973.81, -375.99], ["2025-04-17 12:10:30", "BUY", 371.81, 371.8, -8, 2602.0, -372.36], ["2025-04-17 12:16:00", "SELL", 372.02, 372.04, -9, 2974.02, -373.575], ["2025-04-17 12:18:00", "SELL", 371.71, 371.74, -10, 3345.73, -371.32], ["2025-04-17 12:19:30", "SELL", 372.23, 372.27, -11, 3717.96, -376.68], ["2025-04-17 12:22:00", "SELL", 372.07, 372.08, -12, 4090.03, -374.51], ["2025-04-17 12:23:00", "SELL", 371.71, 371.74, -13, 4461.74, -370.685], ["2025-04-17 12:23:30", "BUY", 371.8, 371.77, -12, 4089.94, -371.24], ["2025-04-17 12:24:30", "SELL", 371.7, 371.72, -13, 4461.64, -370.46], ["2025-04-17 12:27:00", "SELL", 371.84, 371.9, -14, 4833.48, -372.63], ["2025-04-17 12:27:30", "SELL", 371.86, 371.86, -15, 5205.34, -372.485], ["2025-04-17 12:28:00", "SELL", 371.86, 371.87, -16, 5577.2, -372.56], ["2025-04-17 12:32:00", "SELL", 371.61, 371.62, -17, 5948.81, -368.22], ["2025-04-17 12:33:30", "BUY", 372.05, 372.05, -16, 5576.76, -375.72], ["2025-04-17 12:34:30", "BUY", 371.93, 371.89, -15, 5204.83, -373.445], ["2025-04-17 12:36:00", "BUY", 371.96, 371.95, -14, 4832.87, -374.22], ["2025-04-17 12:37:30", "BUY", 371.41, 371.4, -13, 4461.46, -366.61], ["2025-04-17 12:40:30", "SELL", 371.06, 371.06, -14, 4832.52, -362.04], ["2025-04-17 12:42:30", "SELL", 370.66, 370.67, -15, 5203.18, -356.645], ["2025-04-17 12:46:30", "SELL", 370.25, 370.27, -16, 5573.43, -350.25], ["2025-04-17 12:47:00", "BUY", 370.33, 370.31, -15, 5203.1, -351.475], ["2025-04-17 12:47:30", "SELL", 370.31, 370.31, -16, 5573.41, -351.55], ["2025-04-17 12:48:00", "BUY", 370.27, 370.26, -15, 5203.14, -350.685], ["2025-04-17 12:50:30", "BUY", 370.44, 370.44, -14, 4832.7, -353.11], ["2025-04-17 12:51:30", "BUY", 370.48, 370.45, -13, 4462.22, -353.5], ["2025-04-17 12:53:30", "BUY", 371.29, 371.26, -12, 4090.93, -364.01], ["2025-04-17 12:54:00", "BUY", 371.36, 371.35, -11, 3719.57, -365.225], ["2025-04-17 12:54:30", "BUY", 371.37, 371.35, -10, 3348.2, -365.25], ["2025-04-17 12:55:30", "BUY", 371.45, 371.43, -9, 2976.75, -366.03], ["2025-04-17 12:57:30", "BUY", 371.42, 371.41, -8, 2605.33, -365.83], ["2025-04-17 12:58:00", "BUY", 371.46, 371.45, -7, 2233.87, -366.28], ["2025-04-17 12:59:30", "BUY", 371.52, 371.49, -6, 1862.35, -366.56], ["2025-04-17 13:02:00", "BUY", 371.71, 371.69, -5, 1490.64, -367.785], ["2025-04-17 13:02:30", "BUY", 371.67, 371.67, -4, 1118.97, -367.69], ["2025-04-17 13:03:30", "BUY", 371.39, 371.37, -3, 747.58, -366.515], ["2025-04-17 13:04:00", "SELL", 371.32, 371.32, -4, 1118.9, -366.38], ["2025-04-17 13:05:00", "BUY", 371.53, 371.45, -3, 747.37, -366.98], ["2025-04-17 13:06:30", "BUY", 371.2, 371.16, -2, 376.17, -366.15], ["2025-04-17 13:07:30", "BUY", 371.33, 371.33, -1, 4.84, -366.485], ["2025-04-17 13:08:00", "BUY", 371.37, 371.36, 0, -366.53, -366.53], ["2025-04-17 13:11:30", "BUY", 371.19, 371.16, 1, -737.72, -366.56], ["2025-04-17 13:13:30", "BUY", 371.14, 371.1, 2, -1108.86, -366.65], ["2025-04-17 13:14:30", "BUY", 370.84, 370.81, 3, -1479.7, -367.27], ["2025-04-17 13:15:30", "BUY", 370.99, 370.97, 4, -1850.69, -366.79], ["2025-04-17 13:16:30", "BUY", 370.73, 370.72, 5, -2221.42, -367.795], ["2025-04-17 13:17:00", "BUY", 370.77, 370.7, 6, -2592.19, -367.99], ["2025-04-17 13:17:30", "BUY", 370.64, 370.63, 7, -2962.83, -368.385], ["2025-04-17 13:18:30", "BUY", 370.65, 370.6, 8, -3333.48, -368.64], ["2025-04-17 13:19:30", "BUY", 370.74, 370.72, 9, -3704.22, -367.74], ["2025-04-17 13:20:30", "SELL", 370.63, 370.64, -1, 2.06, -368.58], ["2025-04-17 13:22:00", "BUY", 370.5, 370.48, 0, -368.44, -368.44], ["2025-04-17 13:23:30", "BUY", 370.54, 370.51, 1, -738.98, -368.47], ["2025-04-17 13:24:00", "BUY", 370.52, 370.47, 2, -1109.5, -368.55], ["2025-04-17 13:25:30", "BUY", 370.92, 370.87, 3, -1480.42, -367.795], ["2025-04-17 13:27:00", "BUY", 370.48, 370.47, 4, -1850.9, -369.0], ["2025-04-17 13:28:00", "BUY", 370.63, 370.63, 5, -2221.53, -368.38], ["2025-04-17 13:29:30", "BUY", 370.41, 370.4, 6, -2591.94, -369.51], ["2025-04-17 13:31:30", "BUY", 370.74, 370.73, 7, -2962.68, -367.535], ["2025-04-17 13:33:00", "BUY", 370.79, 370.79, 8, -3333.47, -367.15], ["2025-04-17 13:34:30", "BUY", 371.04, 371.01, 9, -3704.51, -365.375], ["2025-04-17 13:37:30", "SELL", 370.98, 371.0, -1, 5.23, -365.78], ["2025-04-17 13:38:30", "BUY", 371.13, 371.09, 0, -365.9, -365.9], ["2025-04-17 13:39:30", "BUY", 371.2, 371.16, 1, -737.1, -365.935], ["2025-04-17 13:41:00", "BUY", 371.04, 371.01, 2, -1108.14, -366.12], ["2025-04-17 13:41:30", "BUY", 370.91, 370.91, 3, -1479.05, -366.32], ["2025-04-17 13:47:30", "BUY", 371.81, 371.79, 4, -1850.86, -363.68], ["2025-04-17 13:49:00", "BUY", 371.56, 371.54, 5, -2222.42, -364.72], ["2025-04-17 13:54:00", "BUY", 371.62, 371.6, 6, -2594.04, -364.38], ["2025-04-17 13:56:00", "BUY", 371.67, 371.65, 7, -2965.71, -364.09], ["2025-04-17 13:57:00", "BUY", 371.36, 371.35, 8, -3337.07, -366.23], ["2025-04-17 13:57:30", "BUY", 371.35, 371.32, 9, -3708.42, -366.495], ["2025-04-17 13:58:30", "SELL", 371.22, 371.22, -1, 3.77, -367.455], ["2025-04-17 13:59:30", "BUY", 371.12, 371.06, 0, -367.35, -367.35], ["2025-04-17 14:01:30", "BUY", 371.12, 371.06, 1, -738.47, -367.41], ["2025-04-17 14:07:30", "BUY", 371.5, 371.48, 2, -1109.97, -367.01], ["2025-04-17 14:09:30", "BUY", 371.55, 371.52, 3, -1481.52, -366.945], ["2025-04-17 14:12:00", "BUY", 371.41, 371.41, 4, -1852.93, -367.29], ["2025-04-17 14:16:30", "BUY", 370.56, 370.53, 5, -2223.49, -370.79], ["2025-04-17 14:19:30", "BUY", 371.36, 371.33, 6, -2594.85, -366.81], ["2025-04-17 14:21:30", "BUY", 371.48, 371.42, 7, -2966.33, -366.355], ["2025-04-17 14:22:30", "BUY", 371.56, 371.5, 8, -3337.89, -365.85], ["2025-04-17 14:23:00", "BUY", 371.58, 371.54, 9, -3709.47, -365.61], ["2025-04-17 14:26:30", "SELL", 370.86, 370.86, -1, -0.91, -371.79], ["2025-04-17 14:27:30", "BUY", 370.92, 370.9, 0, -371.83, -371.83], ["2025-04-17 14:28:30", "BUY", 370.98, 370.95, 1, -742.81, -371.865], ["2025-04-17 14:32:30", "BUY", 370.99, 370.98, 2, -1113.8, -371.83], ["2025-04-17 14:33:30", "BUY", 370.86, 370.86, 3, -1484.66, -372.08], ["2025-04-17 14:37:30", "BUY", 370.51, 370.46, 4, -1855.17, -373.33], ["2025-04-17 14:38:00", "BUY", 370.54, 370.5, 5, -2225.71, -373.21], ["2025-04-17 14:38:30", "BUY", 370.6, 370.58, 6, -2596.31, -372.8], ["2025-04-17 14:39:00", "BUY", 370.57, 370.57, 7, -2966.88, -372.89], ["2025-04-17 14:40:00", "BUY", 370.68, 370.68, 8, -3337.56, -372.12], ["2025-04-17 14:43:00", "BUY", 370.52, 370.49, 9, -3708.08, -373.58], ["2025-04-17 14:43:30", "SELL", 370.48, 370.5, -1, -3.33, -373.835], ["2025-04-17 14:46:00", "SELL", 370.9, 370.9, -2, 367.57, -374.23], ["2025-04-17 14:49:30", "BUY", 370.19, 370.18, -1, -2.62, -372.795], ["2025-04-17 14:51:00", "SELL", 369.74, 369.74, -2, 367.12, -372.36], ["2025-04-17 14:53:00", "BUY", 370.3, 370.29, -1, -3.18, -373.47], ["2025-04-17 14:55:30", "BUY", 369.98, 369.96, 0, -373.16, -373.16], ["2025-04-17 15:01:00", "BUY", 369.38, 369.38, 1, -742.54, -373.165], ["2025-04-17 15:04:30", "BUY", 369.3, 369.28, 2, -1111.84, -373.27], ["2025-04-17 15:08:30", "BUY", 369.09, 369.07, 3, -1480.93, -373.72], ["2025-04-17 15:09:30", "BUY", 369.19, 369.19, 4, -1850.12, -373.36], ["2025-04-17 15:11:30", "BUY", 369.02, 369.0, 5, -2219.14, -374.115], ["2025-04-17 15:25:30", "BUY", 368.14, 368.11, 6, -2587.28, -378.44], ["2025-04-17 15:26:30", "BUY", 368.47, 368.46, 7, -2955.75, -376.495], ["2025-04-17 15:29:00", "BUY", 368.6, 368.58, 8, -3324.35, -375.67], ["2025-04-17 15:34:00", "BUY", 368.45, 368.44, 9, -3692.8, -376.66], ["2025-04-17 15:40:30", "SELL", 368.43, 368.39, -1, -8.49, -376.915]];
+
+        // Define the dt_args
+        let dt_args = {"layout": {"topStart": "pageLength", "topEnd": "search", "bottomStart": "info", "bottomEnd": "paging"}, "mode": "inline", "order": [], "warn_on_selected_rows_not_rendered": true};
+        dt_args["data"] = data;
+
+        
+        new DataTable(table, dt_args);
+    });
+</script>
+</div>
+</div>
+</section>
+<section id="ledger" class="level3">
+<h3 class="anchored" data-anchor-id="ledger">Ledger:</h3>
+<div id="27e9f6bb" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<table id="itables_ec347809_b4ef_484e_8807_39fd64667c5a" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto;margin:auto;caption-side:bottom">
+<thead>
+    <tr style="text-align: right;">
+      
+      <th>timestamp</th>
+      <th>inventory</th>
+      <th>cash_position</th>
+      <th>mid_price</th>
+      <th>portfolio_value</th>
+      <th>unrealized_pnl</th>
+    </tr>
+  </thead><tbody><tr>
+<td style="vertical-align:middle; text-align:left">
+<a href="https://mwouts.github.io/itables/"><svg class="main-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" width="64" viewbox="0 0 500 400" style="font-family: 'Droid Sans', sans-serif;">
+    <g style="fill:#d9d7fc">
+        <path d="M100,400H500V357H100Z"></path>
+        <path d="M100,300H400V257H100Z"></path>
+        <path d="M0,200H400V157H0Z"></path>
+        <path d="M100,100H500V57H100Z"></path>
+        <path d="M100,350H500V307H100Z"></path>
+        <path d="M100,250H400V207H100Z"></path>
+        <path d="M0,150H400V107H0Z"></path>
+        <path d="M100,50H500V7H100Z"></path>
+    </g>
+    <g style="fill:#1a1366;stroke:#1a1366;">
+   <rect x="100" y="7" width="400" height="43">
+    <animate attributename="width" values="0;400;0" dur="5s" repeatcount="indefinite"></animate>
+      <animate attributename="x" values="100;100;500" dur="5s" repeatcount="indefinite"></animate>
+  </rect>
+        <rect x="0" y="107" width="400" height="43">
+    <animate attributename="width" values="0;400;0" dur="3.5s" repeatcount="indefinite"></animate>
+    <animate attributename="x" values="0;0;400" dur="3.5s" repeatcount="indefinite"></animate>
+  </rect>
+        <rect x="100" y="207" width="300" height="43">
+    <animate attributename="width" values="0;300;0" dur="3s" repeatcount="indefinite"></animate>
+    <animate attributename="x" values="100;100;400" dur="3s" repeatcount="indefinite"></animate>
+  </rect>
+        <rect x="100" y="307" width="400" height="43">
+    <animate attributename="width" values="0;400;0" dur="4s" repeatcount="indefinite"></animate>
+      <animate attributename="x" values="100;100;500" dur="4s" repeatcount="indefinite"></animate>
+  </rect>
+        <g style="fill:transparent;stroke-width:8; stroke-linejoin:round" rx="5">
+            <g transform="translate(45 50) rotate(-45)">
+                <circle r="33" cx="0" cy="0"></circle>
+                <rect x="-8" y="32" width="16" height="30"></rect>
+            </g>
+
+            <g transform="translate(450 152)">
+                <polyline points="-15,-20 -35,-20 -35,40 25,40 25,20"></polyline>
+                <rect x="-15" y="-40" width="60" height="60"></rect>
+            </g>
+
+            <g transform="translate(50 352)">
+                <polygon points="-35,-5 0,-40 35,-5"></polygon>
+                <polygon points="-35,10 0,45 35,10"></polygon>
+            </g>
+
+            <g transform="translate(75 250)">
+                <polyline points="-30,30 -60,0 -30,-30"></polyline>
+                <polyline points="0,30 -30,0 0,-30"></polyline>
+            </g>
+
+            <g transform="translate(425 250) rotate(180)">
+                <polyline points="-30,30 -60,0 -30,-30"></polyline>
+                <polyline points="0,30 -30,0 0,-30"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>
+</a>
+Loading ITables v2.3.0 from the internet...
+(need <a href="https://mwouts.github.io/itables/troubleshooting.html">help</a>?)</td>
+</tr></tbody>
+</table>
+<link href="https://www.unpkg.com/dt_for_itables@2.2.0/dt_bundle.css" rel="stylesheet">
+<script type="module">
+    import {DataTable, jQuery as $} from 'https://www.unpkg.com/dt_for_itables@2.2.0/dt_bundle.js';
+
+    document.querySelectorAll("#itables_ec347809_b4ef_484e_8807_39fd64667c5a:not(.dataTable)").forEach(table => {
+        if (!(table instanceof HTMLTableElement))
+            return;
+
+        // Define the table data
+        const data = [["2025-04-21 09:45:00", -1, 1000000.0, 362.94, 999637.065, 0.0], ["2025-04-21 09:45:30", -1, 1000000.0, 362.88, 999637.125, 0.0], ["2025-04-21 09:46:00", -1, 1000000.0, 362.51, 999637.485, 0.0], ["2025-04-21 09:46:30", -1, 1000000.0, 362.23, 999637.77, 0.0], ["2025-04-21 09:47:00", -1, 1000000.0, 362.13, 999637.865, 0.0], ["2025-04-21 09:47:30", -1, 1000000.0, 362.25, 999637.755, 0.0], ["2025-04-21 09:48:00", -1, 1000000.0, 362.32, 999637.675, 0.0], ["2025-04-21 09:48:30", -1, 1000000.0, 362.77, 999637.23, 0.0], ["2025-04-21 09:49:00", -1, 1000000.0, 363.06, 999636.94, 0.0], ["2025-04-21 09:49:30", -1, 1000000.0, 362.8, 999637.2, 0.0], ["2025-04-21 09:50:00", -1, 1000000.0, 362.88, 999637.125, 0.0], ["2025-04-21 09:50:30", -1, 1000000.0, 363.01, 999636.985, 0.0], ["2025-04-21 09:51:00", -1, 1000000.0, 362.73, 999637.27, 0.0], ["2025-04-21 09:51:30", -1, 1000000.0, 362.78, 999637.22, 0.0], ["2025-04-21 09:52:00", -1, 1000000.0, 362.75, 999637.255, 0.0], ["2025-04-21 09:52:30", -1, 1000000.0, 362.68, 999637.315, 0.0], ["2025-04-21 09:53:00", -1, 1000000.0, 362.46, 999637.545, 0.0], ["2025-04-21 09:53:30", -1, 1000000.0, 362.25, 999637.755, 0.0], ["2025-04-21 09:54:00", -1, 1000000.0, 362.12, 999637.875, 0.0], ["2025-04-21 09:54:30", 0, 999637.7, 362.28, 999637.7, -0.0], ["2025-04-21 09:55:00", 0, 999637.7, 362.15, 999637.7, 0.0], ["2025-04-21 09:55:30", 0, 999637.7, 362.1, 999637.7, 0.0], ["2025-04-21 09:56:00", 0, 999637.7, 362.17, 999637.7, 0.0], ["2025-04-21 09:56:30", 0, 999637.7, 361.94, 999637.7, 0.0], ["2025-04-21 09:57:00", 0, 999637.7, 361.76, 999637.7, 0.0], ["2025-04-21 09:57:30", 0, 999637.7, 361.6, 999637.7, 0.0], ["2025-04-21 09:58:00", 0, 999637.7, 361.6, 999637.7, 0.0], ["2025-04-21 09:58:30", 0, 999637.7, 361.4, 999637.7, 0.0], ["2025-04-21 09:59:00", 0, 999637.7, 361.25, 999637.7, 0.0], ["2025-04-21 09:59:30", 0, 999637.7, 361.17, 999637.7, 0.0], ["2025-04-21 10:00:00", 0, 999637.7, 360.97, 999637.7, 0.0], ["2025-04-21 10:00:30", 0, 999637.7, 360.73, 999637.7, 0.0], ["2025-04-21 10:01:00", 0, 999637.7, 360.83, 999637.7, 0.0], ["2025-04-21 10:01:30", 0, 999637.7, 360.91, 999637.7, 0.0], ["2025-04-21 10:02:00", 0, 999637.7, 360.71, 999637.7, 0.0], ["2025-04-21 10:02:30", 0, 999637.7, 360.63, 999637.7, 0.0], ["2025-04-21 10:03:00", 0, 999637.7, 360.58, 999637.7, 0.0], ["2025-04-21 10:03:30", 0, 999637.7, 360.48, 999637.7, 0.0], ["2025-04-21 10:04:00", 0, 999637.7, 360.66, 999637.7, 0.0], ["2025-04-21 10:04:30", 0, 999637.7, 360.6, 999637.7, 0.0], ["2025-04-21 10:05:00", 0, 999637.7, 360.47, 999637.7, 0.0], ["2025-04-21 10:05:30", 0, 999637.7, 360.49, 999637.7, 0.0], ["2025-04-21 10:06:00", 0, 999637.7, 360.38, 999637.7, 0.0], ["2025-04-21 10:06:30", 0, 999637.7, 360.31, 999637.7, 0.0], ["2025-04-21 10:07:00", 0, 999637.7, 360.47, 999637.7, 0.0], ["2025-04-21 10:07:30", 0, 999637.7, 360.49, 999637.7, 0.0], ["2025-04-21 10:08:00", 0, 999637.7, 360.28, 999637.7, 0.0], ["2025-04-21 10:08:30", 0, 999637.7, 360.25, 999637.7, 0.0], ["2025-04-21 10:09:00", 0, 999637.7, 360.37, 999637.7, 0.0], ["2025-04-21 10:09:30", 0, 999637.7, 360.19, 999637.7, 0.0], ["2025-04-21 10:10:00", 0, 999637.7, 360.25, 999637.7, 0.0], ["2025-04-21 10:10:30", 0, 999637.7, 360.26, 999637.7, 0.0], ["2025-04-21 10:11:00", 0, 999637.7, 360.19, 999637.7, 0.0], ["2025-04-21 10:11:30", 0, 999637.7, 360.35, 999637.7, 0.0], ["2025-04-21 10:12:00", 0, 999637.7, 360.4, 999637.7, 0.0], ["2025-04-21 10:12:30", 0, 999637.7, 360.44, 999637.7, 0.0], ["2025-04-21 10:13:00", 0, 999637.7, 360.36, 999637.7, 0.0], ["2025-04-21 10:13:30", 0, 999637.7, 360.21, 999637.7, 0.0], ["2025-04-21 10:14:00", 0, 999637.7, 359.99, 999637.7, 0.0], ["2025-04-21 10:14:30", 0, 999637.7, 360.01, 999637.7, 0.0], ["2025-04-21 10:15:00", 0, 999637.7, 360.19, 999637.7, 0.0], ["2025-04-21 10:15:30", 0, 999637.7, 360.09, 999637.7, 0.0], ["2025-04-21 10:16:00", 0, 999637.7, 359.96, 999637.7, 0.0], ["2025-04-21 10:16:30", 0, 999637.7, 359.78, 999637.7, 0.0], ["2025-04-21 10:17:00", 0, 999637.7, 359.75, 999637.7, 0.0], ["2025-04-21 10:17:30", 0, 999637.7, 359.95, 999637.7, 0.0], ["2025-04-21 10:18:00", 0, 999637.7, 359.88, 999637.7, 0.0], ["2025-04-21 10:18:30", 0, 999637.7, 359.77, 999637.7, 0.0], ["2025-04-21 10:19:00", 0, 999637.7, 359.77, 999637.7, 0.0], ["2025-04-21 10:19:30", 0, 999637.7, 359.91, 999637.7, 0.0], ["2025-04-21 10:20:00", 0, 999637.7, 360.09, 999637.7, 0.0], ["2025-04-21 10:20:30", 0, 999637.7, 360.06, 999637.7, 0.0], ["2025-04-21 10:21:00", 0, 999637.7, 360.0, 999637.7, 0.0], ["2025-04-21 10:21:30", 0, 999637.7, 360.17, 999637.7, 0.0], ["2025-04-21 10:22:00", 0, 999637.7, 360.19, 999637.7, 0.0], ["2025-04-21 10:22:30", 0, 999637.7, 360.07, 999637.7, 0.0], ["2025-04-21 10:23:00", 0, 999637.7, 360.11, 999637.7, 0.0], ["2025-04-21 10:23:30", 0, 999637.7, 360.06, 999637.7, 0.0], ["2025-04-21 10:24:00", 0, 999637.7, 360.14, 999637.7, 0.0], ["2025-04-21 10:24:30", 0, 999637.7, 360.06, 999637.7, 0.0], ["2025-04-21 10:25:00", 0, 999637.7, 360.17, 999637.7, 0.0], ["2025-04-21 10:25:30", 0, 999637.7, 360.29, 999637.7, 0.0], ["2025-04-21 10:26:00", 0, 999637.7, 360.24, 999637.7, 0.0], ["2025-04-21 10:26:30", 0, 999637.7, 360.3, 999637.7, 0.0], ["2025-04-21 10:27:00", 0, 999637.7, 360.16, 999637.7, 0.0], ["2025-04-21 10:27:30", 0, 999637.7, 360.04, 999637.7, 0.0], ["2025-04-21 10:28:00", 0, 999637.7, 359.94, 999637.7, 0.0], ["2025-04-21 10:28:30", 0, 999637.7, 360.07, 999637.7, 0.0], ["2025-04-21 10:29:00", 0, 999637.7, 360.13, 999637.7, 0.0], ["2025-04-21 10:29:30", 0, 999637.7, 360.23, 999637.7, 0.0], ["2025-04-21 10:30:00", 0, 999637.7, 360.3, 999637.7, 0.0], ["2025-04-21 10:30:30", 0, 999637.7, 360.31, 999637.7, 0.0], ["2025-04-21 10:31:00", 0, 999637.7, 360.23, 999637.7, 0.0], ["2025-04-21 10:31:30", 0, 999637.7, 360.02, 999637.7, 0.0], ["2025-04-21 10:32:00", 0, 999637.7, 360.0, 999637.7, 0.0], ["2025-04-21 10:32:30", 0, 999637.7, 359.96, 999637.7, 0.0], ["2025-04-21 10:33:00", 0, 999637.7, 359.96, 999637.7, 0.0], ["2025-04-21 10:33:30", 0, 999637.7, 360.08, 999637.7, 0.0], ["2025-04-21 10:34:00", 0, 999637.7, 360.29, 999637.7, 0.0], ["2025-04-21 10:34:30", 0, 999637.7, 360.33, 999637.7, 0.0], ["2025-04-21 10:35:00", 0, 999637.7, 360.5, 999637.7, 0.0], ["2025-04-21 10:35:30", 1, 999277.2, 360.49, 999637.69, -0.01], ["2025-04-21 10:36:00", 1, 999277.2, 360.52, 999637.725, 0.0], ["2025-04-21 10:36:30", 1, 999277.2, 360.78, 999637.985, 0.0], ["2025-04-21 10:37:00", 1, 999277.2, 360.74, 999637.94, 0.0], ["2025-04-21 10:37:30", 1, 999277.2, 360.8, 999638.0, 0.0], ["2025-04-21 10:38:00", 1, 999277.2, 361.0, 999638.205, 0.0], ["2025-04-21 10:38:30", 1, 999277.2, 361.06, 999638.265, 0.0], ["2025-04-21 10:39:00", 1, 999277.2, 361.15, 999638.35, 0.0], ["2025-04-21 10:39:30", 1, 999277.2, 361.16, 999638.36, 0.0], ["2025-04-21 10:40:00", 1, 999277.2, 361.14, 999638.345, 0.0], ["2025-04-21 10:40:30", 1, 999277.2, 361.34, 999638.535, 0.0], ["2025-04-21 10:41:00", 1, 999277.2, 361.4, 999638.605, 0.0], ["2025-04-21 10:41:30", 1, 999277.2, 361.44, 999638.64, 0.0], ["2025-04-21 10:42:00", 1, 999277.2, 361.44, 999638.645, 0.0], ["2025-04-21 10:42:30", 1, 999277.2, 361.27, 999638.47, 0.0], ["2025-04-21 10:43:00", 2, 998916.13, 361.06, 999638.25, -0.02], ["2025-04-21 10:43:30", 2, 998916.13, 361.03, 999638.2, 0.0], ["2025-04-21 10:44:00", 2, 998916.13, 360.88, 999637.89, 0.0], ["2025-04-21 10:44:30", 2, 998916.13, 360.71, 999637.55, 0.0], ["2025-04-21 10:45:00", 2, 998916.13, 360.57, 999637.28, 0.0], ["2025-04-21 10:45:30", 2, 998916.13, 360.62, 999637.38, 0.0], ["2025-04-21 10:46:00", 2, 998916.13, 360.69, 999637.5, 0.0], ["2025-04-21 10:46:30", 2, 998916.13, 360.43, 999636.99, 0.0], ["2025-04-21 10:47:00", 2, 998916.13, 360.5, 999637.14, 0.0], ["2025-04-21 10:47:30", 3, 998555.69, 360.44, 999637.01, 0.0], ["2025-04-21 10:48:00", 4, 998195.21, 360.48, 999637.11, -0.02], ["2025-04-21 10:48:30", 4, 998195.21, 360.38, 999636.73, 0.0], ["2025-04-21 10:49:00", 4, 998195.21, 360.18, 999635.93, 0.0], ["2025-04-21 10:49:30", 4, 998195.21, 360.06, 999635.47, 0.0], ["2025-04-21 10:50:00", 4, 998195.21, 360.06, 999635.43, 0.0], ["2025-04-21 10:50:30", 4, 998195.21, 360.06, 999635.45, 0.0], ["2025-04-21 10:51:00", 4, 998195.21, 360.09, 999635.57, 0.0], ["2025-04-21 10:51:30", 4, 998195.21, 359.95, 999635.03, 0.0], ["2025-04-21 10:52:00", 4, 998195.21, 359.99, 999635.15, 0.0], ["2025-04-21 10:52:30", 5, 997835.23, 359.98, 999635.105, -0.025], ["2025-04-21 10:53:00", 5, 997835.23, 360.02, 999635.355, 0.0], ["2025-04-21 10:53:30", 5, 997835.23, 360.05, 999635.48, 0.0], ["2025-04-21 10:54:00", 5, 997835.23, 360.16, 999636.03, 0.0], ["2025-04-21 10:54:30", 5, 997835.23, 360.16, 999636.055, 0.0], ["2025-04-21 10:55:00", 5, 997835.23, 360.06, 999635.53, 0.0], ["2025-04-21 10:55:30", 5, 997835.23, 360.1, 999635.705, 0.0], ["2025-04-21 10:56:00", 5, 997835.23, 360.16, 999636.055, 0.0], ["2025-04-21 10:56:30", 5, 997835.23, 360.17, 999636.08, 0.0], ["2025-04-21 10:57:00", 5, 997835.23, 360.08, 999635.63, 0.0], ["2025-04-21 10:57:30", 5, 997835.23, 360.0, 999635.205, 0.0], ["2025-04-21 10:58:00", 6, 997475.25, 359.98, 999635.13, 0.0], ["2025-04-21 10:58:30", 6, 997475.25, 360.03, 999635.46, 0.0], ["2025-04-21 10:59:00", 6, 997475.25, 359.93, 999634.83, 0.0], ["2025-04-21 10:59:30", 6, 997475.25, 360.01, 999635.31, 0.0], ["2025-04-21 11:00:00", 6, 997475.25, 360.23, 999636.63, 0.0], ["2025-04-21 11:00:30", 7, 997114.91, 360.33, 999637.255, -0.035], ["2025-04-21 11:01:00", 7, 997114.91, 360.19, 999636.275, 0.0], ["2025-04-21 11:01:30", 7, 997114.91, 359.95, 999634.595, 0.0], ["2025-04-21 11:02:00", 7, 997114.91, 359.95, 999634.595, 0.0], ["2025-04-21 11:02:30", 8, 996754.94, 359.96, 999634.62, -0.08], ["2025-04-21 11:03:00", 8, 996754.94, 359.96, 999634.58, 0.0], ["2025-04-21 11:03:30", 8, 996754.94, 359.96, 999634.62, 0.0], ["2025-04-21 11:04:00", 8, 996754.94, 360.08, 999635.58, 0.0], ["2025-04-21 11:04:30", 8, 996754.94, 360.24, 999636.86, 0.0], ["2025-04-21 11:05:00", 8, 996754.94, 360.45, 999638.58, 0.0], ["2025-04-21 11:05:30", 8, 996754.94, 360.66, 999640.26, 0.0], ["2025-04-21 11:06:00", 8, 996754.94, 360.63, 999640.02, 0.0], ["2025-04-21 11:06:30", 8, 996754.94, 360.77, 999641.14, 0.0], ["2025-04-21 11:07:00", 8, 996754.94, 360.7, 999640.54, 0.0], ["2025-04-21 11:07:30", 9, 996394.34, 360.6, 999639.74, 0.0], ["2025-04-21 11:08:00", -1, 1000000.1, 360.6, 999639.5, -0.02], ["2025-04-21 11:08:30", -1, 1000000.1, 360.75, 999639.345, 0.0], ["2025-04-21 11:09:00", -1, 1000000.1, 360.88, 999639.215, 0.0], ["2025-04-21 11:09:30", -2, 1000361.0, 360.9, 999639.2, -0.0], ["2025-04-21 11:10:00", -2, 1000361.0, 360.87, 999639.26, 0.0], ["2025-04-21 11:10:30", -2, 1000361.0, 360.86, 999639.28, 0.0], ["2025-04-21 11:11:00", -2, 1000361.0, 360.79, 999639.42, 0.0], ["2025-04-21 11:11:30", -2, 1000361.0, 360.98, 999639.04, 0.0], ["2025-04-21 11:12:00", -2, 1000361.0, 360.92, 999639.16, 0.0], ["2025-04-21 11:12:30", -3, 1000721.82, 360.82, 999639.36, -0.0], ["2025-04-21 11:13:00", -3, 1000721.82, 360.83, 999639.345, 0.0], ["2025-04-21 11:13:30", -3, 1000721.82, 360.7, 999639.72, 0.0], ["2025-04-21 11:14:00", -3, 1000721.82, 360.46, 999640.455, 0.0], ["2025-04-21 11:14:30", -3, 1000721.82, 360.25, 999641.055, 0.0], ["2025-04-21 11:15:00", -3, 1000721.82, 360.24, 999641.115, 0.0], ["2025-04-21 11:15:30", -3, 1000721.82, 360.27, 999641.01, 0.0], ["2025-04-21 11:16:00", -3, 1000721.82, 360.13, 999641.415, 0.0], ["2025-04-21 11:16:30", -3, 1000721.82, 360.24, 999641.115, 0.0], ["2025-04-21 11:17:00", -3, 1000721.82, 360.18, 999641.28, 0.0], ["2025-04-21 11:17:30", -3, 1000721.82, 360.18, 999641.28, 0.0], ["2025-04-21 11:18:00", -3, 1000721.82, 360.22, 999641.175, 0.0], ["2025-04-21 11:18:30", -3, 1000721.82, 360.33, 999640.845, 0.0], ["2025-04-21 11:19:00", -3, 1000721.82, 360.39, 999640.635, 0.0], ["2025-04-21 11:19:30", -3, 1000721.82, 360.47, 999640.425, 0.0], ["2025-04-21 11:20:00", -3, 1000721.82, 360.44, 999640.485, 0.0], ["2025-04-21 11:20:30", -3, 1000721.82, 360.31, 999640.905, 0.0], ["2025-04-21 11:21:00", -2, 1000361.72, 360.08, 999641.56, 0.04], ["2025-04-21 11:21:30", -2, 1000361.72, 360.13, 999641.46, 0.0], ["2025-04-21 11:22:00", -1, 1000001.59, 360.12, 999641.47, 0.01], ["2025-04-21 11:22:30", -1, 1000001.59, 359.88, 999641.705, 0.0], ["2025-04-21 11:23:00", -1, 1000001.59, 359.75, 999641.835, 0.0], ["2025-04-21 11:23:30", -1, 1000001.59, 359.95, 999641.64, 0.0], ["2025-04-21 11:24:00", -2, 1000361.53, 359.94, 999641.65, -0.0], ["2025-04-21 11:24:30", -2, 1000361.53, 359.89, 999641.75, 0.0], ["2025-04-21 11:25:00", -2, 1000361.53, 359.88, 999641.76, 0.0], ["2025-04-21 11:25:30", -1, 1000001.64, 359.86, 999641.785, 0.035], ["2025-04-21 11:26:00", -1, 1000001.64, 359.86, 999641.78, 0.0], ["2025-04-21 11:26:30", -1, 1000001.64, 359.88, 999641.755, 0.0], ["2025-04-21 11:27:00", -2, 1000361.55, 359.91, 999641.73, -0.0], ["2025-04-21 11:27:30", -1, 1000001.62, 359.92, 999641.7, 0.01], ["2025-04-21 11:28:00", -1, 1000001.62, 360.0, 999641.625, 0.0], ["2025-04-21 11:28:30", -1, 1000001.62, 359.78, 999641.835, 0.0], ["2025-04-21 11:29:00", -1, 1000001.62, 359.53, 999642.09, 0.0], ["2025-04-21 11:29:30", -2, 1000361.15, 359.53, 999642.09, -0.0], ["2025-04-21 11:30:00", -2, 1000361.15, 359.51, 999642.12, 0.0], ["2025-04-21 11:30:30", -2, 1000361.15, 359.66, 999641.82, 0.0], ["2025-04-21 11:31:00", -2, 1000361.15, 359.6, 999641.95, 0.0], ["2025-04-21 11:31:30", -2, 1000361.15, 359.45, 999642.26, 0.0], ["2025-04-21 11:32:00", -2, 1000361.15, 359.42, 999642.31, 0.0], ["2025-04-21 11:32:30", -2, 1000361.15, 359.4, 999642.34, 0.0], ["2025-04-21 11:33:00", -2, 1000361.15, 359.4, 999642.34, 0.0], ["2025-04-21 11:33:30", -2, 1000361.15, 359.42, 999642.31, 0.0], ["2025-04-21 11:34:00", -2, 1000361.15, 359.43, 999642.3, 0.0], ["2025-04-21 11:34:30", -2, 1000361.15, 359.32, 999642.51, 0.0], ["2025-04-21 11:35:00", -2, 1000361.15, 359.12, 999642.91, 0.0], ["2025-04-21 11:35:30", -2, 1000361.15, 359.25, 999642.65, 0.0], ["2025-04-21 11:36:00", -2, 1000361.15, 359.4, 999642.34, 0.0], ["2025-04-21 11:36:30", -2, 1000361.15, 359.26, 999642.63, 0.0], ["2025-04-21 11:37:00", -2, 1000361.15, 359.29, 999642.56, 0.0], ["2025-04-21 11:37:30", -1, 1000001.87, 359.25, 999642.62, 0.03], ["2025-04-21 11:38:00", -1, 1000001.87, 359.3, 999642.57, 0.0], ["2025-04-21 11:38:30", -1, 1000001.87, 359.27, 999642.595, 0.0], ["2025-04-21 11:39:00", -1, 1000001.87, 359.26, 999642.605, 0.0], ["2025-04-21 11:39:30", -1, 1000001.87, 359.21, 999642.655, 0.0], ["2025-04-21 11:40:00", -1, 1000001.87, 359.21, 999642.665, 0.0], ["2025-04-21 11:40:30", -1, 1000001.87, 359.24, 999642.635, 0.0], ["2025-04-21 11:41:00", -1, 1000001.87, 359.31, 999642.56, 0.0], ["2025-04-21 11:41:30", -1, 1000001.87, 359.18, 999642.69, 0.0], ["2025-04-21 11:42:00", -2, 1000361.07, 359.2, 999642.67, -0.0], ["2025-04-21 11:42:30", -2, 1000361.07, 359.19, 999642.68, 0.0], ["2025-04-21 11:43:00", -2, 1000361.07, 359.19, 999642.69, 0.0], ["2025-04-21 11:43:30", -2, 1000361.07, 359.19, 999642.7, 0.0], ["2025-04-21 11:44:00", -2, 1000361.07, 358.93, 999643.2, 0.0], ["2025-04-21 11:44:30", -1, 1000002.24, 358.81, 999643.43, 0.02], ["2025-04-21 11:45:00", -1, 1000002.24, 358.77, 999643.47, 0.0], ["2025-04-21 11:45:30", -1, 1000002.24, 358.8, 999643.445, 0.0], ["2025-04-21 11:46:00", -1, 1000002.24, 358.64, 999643.6, 0.0], ["2025-04-21 11:46:30", -1, 1000002.24, 358.5, 999643.745, 0.0], ["2025-04-21 11:47:00", -1, 1000002.24, 358.59, 999643.65, 0.0], ["2025-04-21 11:47:30", 0, 999643.65, 358.58, 999643.65, -0.0], ["2025-04-21 11:48:00", 0, 999643.65, 358.5, 999643.65, 0.0], ["2025-04-21 11:48:30", 0, 999643.65, 358.37, 999643.65, 0.0], ["2025-04-21 11:49:00", 0, 999643.65, 358.46, 999643.65, 0.0], ["2025-04-21 11:49:30", 1, 999285.04, 358.6, 999643.635, -0.015], ["2025-04-21 11:50:00", 1, 999285.04, 358.57, 999643.61, 0.0], ["2025-04-21 11:50:30", 1, 999285.04, 358.62, 999643.66, 0.0], ["2025-04-21 11:51:00", 1, 999285.04, 358.69, 999643.725, 0.0], ["2025-04-21 11:51:30", 1, 999285.04, 358.7, 999643.74, 0.0], ["2025-04-21 11:52:00", 1, 999285.04, 358.69, 999643.73, 0.0], ["2025-04-21 11:52:30", 1, 999285.04, 358.69, 999643.735, 0.0], ["2025-04-21 11:53:00", 1, 999285.04, 358.67, 999643.71, 0.0], ["2025-04-21 11:53:30", 2, 998926.41, 358.62, 999643.66, -0.01], ["2025-04-21 11:54:00", 2, 998926.41, 358.58, 999643.56, 0.0], ["2025-04-21 11:54:30", 2, 998926.41, 358.35, 999643.1, 0.0], ["2025-04-21 11:55:00", 2, 998926.41, 358.27, 999642.95, 0.0], ["2025-04-21 11:55:30", 2, 998926.41, 358.03, 999642.48, 0.0], ["2025-04-21 11:56:00", 2, 998926.41, 358.02, 999642.46, 0.0], ["2025-04-21 11:56:30", 2, 998926.41, 357.86, 999642.13, 0.0], ["2025-04-21 11:57:00", 2, 998926.41, 357.99, 999642.39, 0.0], ["2025-04-21 11:57:30", 2, 998926.41, 358.2, 999642.8, 0.0], ["2025-04-21 11:58:00", 2, 998926.41, 358.16, 999642.73, 0.0], ["2025-04-21 11:58:30", 2, 998926.41, 358.24, 999642.89, 0.0], ["2025-04-21 11:59:00", 2, 998926.41, 358.27, 999642.96, 0.0], ["2025-04-21 11:59:30", 3, 998568.16, 358.25, 999642.895, -0.015], ["2025-04-21 12:00:00", 3, 998568.16, 358.35, 999643.21, 0.0], ["2025-04-21 12:00:30", 4, 998209.7, 358.44, 999643.48, -0.06], ["2025-04-21 12:01:00", 4, 998209.7, 358.55, 999643.9, 0.0], ["2025-04-21 12:01:30", 4, 998209.7, 358.59, 999644.04, 0.0], ["2025-04-21 12:02:00", 4, 998209.7, 358.44, 999643.46, 0.0], ["2025-04-21 12:02:30", 4, 998209.7, 358.29, 999642.86, 0.0], ["2025-04-21 12:03:00", 4, 998209.7, 358.23, 999642.6, 0.0], ["2025-04-21 12:03:30", 4, 998209.7, 358.28, 999642.84, 0.0], ["2025-04-21 12:04:00", 4, 998209.7, 358.23, 999642.62, 0.0], ["2025-04-21 12:04:30", 5, 997851.41, 358.25, 999642.685, -0.175], ["2025-04-21 12:05:00", 5, 997851.41, 358.34, 999643.11, 0.0], ["2025-04-21 12:05:30", 6, 997493.16, 358.25, 999642.66, 0.0], ["2025-04-21 12:06:00", 6, 997493.16, 358.18, 999642.24, 0.0], ["2025-04-21 12:06:30", 7, 997134.85, 358.3, 999642.95, -0.07], ["2025-04-21 12:07:00", 7, 997134.85, 358.22, 999642.39, 0.0], ["2025-04-21 12:07:30", 8, 996776.78, 358.06, 999641.22, -0.12], ["2025-04-21 12:08:00", 8, 996776.78, 358.08, 999641.42, 0.0], ["2025-04-21 12:08:30", 8, 996776.78, 358.18, 999642.22, 0.0], ["2025-04-21 12:09:00", 9, 996418.46, 358.28, 999643.025, -0.315], ["2025-04-21 12:09:30", 9, 996418.46, 358.34, 999643.52, 0.0], ["2025-04-21 12:10:00", 9, 996418.46, 358.18, 999642.035, 0.0], ["2025-04-21 12:10:30", 9, 996418.46, 358.19, 999642.125, 0.0], ["2025-04-21 12:11:00", -1, 1000001.47, 358.3, 999643.175, 0.005], ["2025-04-21 12:11:30", -1, 1000001.47, 358.18, 999643.29, 0.0], ["2025-04-21 12:12:00", 0, 999643.24, 358.22, 999643.24, -0.0], ["2025-04-21 12:12:30", 0, 999643.24, 358.27, 999643.24, 0.0], ["2025-04-21 12:13:00", 0, 999643.24, 358.36, 999643.24, 0.0], ["2025-04-21 12:13:30", 0, 999643.24, 358.39, 999643.24, 0.0], ["2025-04-21 12:14:00", 0, 999643.24, 358.26, 999643.24, 0.0], ["2025-04-21 12:14:30", 1, 999284.99, 358.24, 999643.225, -0.015], ["2025-04-21 12:15:00", 2, 998926.82, 358.16, 999643.14, -0.02], ["2025-04-21 12:15:30", 2, 998926.82, 358.16, 999643.14, 0.0], ["2025-04-21 12:16:00", 2, 998926.82, 358.06, 999642.95, 0.0], ["2025-04-21 12:16:30", 3, 998568.65, 358.17, 999643.145, -0.015], ["2025-04-21 12:17:00", 3, 998568.65, 358.23, 999643.34, 0.0], ["2025-04-21 12:17:30", 4, 998210.34, 358.31, 999643.58, 0.0], ["2025-04-21 12:18:00", 4, 998210.34, 358.25, 999643.34, 0.0], ["2025-04-21 12:18:30", 4, 998210.34, 358.14, 999642.92, 0.0], ["2025-04-21 12:19:00", 4, 998210.34, 358.08, 999642.64, 0.0], ["2025-04-21 12:19:30", 5, 997852.21, 358.13, 999642.86, 0.0], ["2025-04-21 12:20:00", 6, 997494.09, 358.12, 999642.81, 0.0], ["2025-04-21 12:20:30", 6, 997494.09, 358.26, 999643.68, 0.0], ["2025-04-21 12:21:00", 6, 997494.09, 358.35, 999644.19, 0.0], ["2025-04-21 12:21:30", 6, 997494.09, 358.33, 999644.07, 0.0], ["2025-04-21 12:22:00", 7, 997135.89, 358.19, 999643.185, -0.105], ["2025-04-21 12:22:30", 8, 996777.7, 358.18, 999643.14, -0.08], ["2025-04-21 12:23:00", 8, 996777.7, 358.38, 999644.7, 0.0], ["2025-04-21 12:23:30", 8, 996777.7, 358.48, 999645.54, 0.0], ["2025-04-21 12:24:00", 8, 996777.7, 358.39, 999644.82, 0.0], ["2025-04-21 12:24:30", 8, 996777.7, 358.38, 999644.78, 0.0], ["2025-04-21 12:25:00", 9, 996419.2, 358.47, 999645.385, -0.315], ["2025-04-21 12:25:30", -1, 1000003.16, 358.42, 999644.74, -0.02], ["2025-04-21 12:26:00", -1, 1000003.16, 358.36, 999644.805, 0.0], ["2025-04-21 12:26:30", -1, 1000003.16, 358.26, 999644.895, 0.0], ["2025-04-21 12:27:00", 0, 999644.95, 358.2, 999644.95, -0.0], ["2025-04-21 12:27:30", 0, 999644.95, 358.14, 999644.95, 0.0], ["2025-04-21 12:28:00", 1, 999286.81, 358.1, 999644.91, -0.04], ["2025-04-21 12:28:30", 1, 999286.81, 358.08, 999644.89, 0.0], ["2025-04-21 12:29:00", 2, 998928.65, 358.13, 999644.92, -0.05], ["2025-04-21 12:29:30", 2, 998928.65, 358.14, 999644.94, 0.0], ["2025-04-21 12:30:00", 3, 998570.43, 358.22, 999645.075, -0.015], ["2025-04-21 12:30:30", 3, 998570.43, 358.37, 999645.525, 0.0], ["2025-04-21 12:31:00", 4, 998211.91, 358.51, 999645.97, -0.02], ["2025-04-21 12:31:30", 4, 998211.91, 358.53, 999646.05, 0.0], ["2025-04-21 12:32:00", 4, 998211.91, 358.62, 999646.41, 0.0], ["2025-04-21 12:32:30", 4, 998211.91, 358.67, 999646.59, 0.0], ["2025-04-21 12:33:00", 5, 997853.21, 358.69, 999646.635, -0.075], ["2025-04-21 12:33:30", 5, 997853.21, 358.64, 999646.41, 0.0], ["2025-04-21 12:34:00", 5, 997853.21, 358.53, 999645.885, 0.0], ["2025-04-21 12:34:30", 6, 997494.66, 358.53, 999645.87, -0.09], ["2025-04-21 12:35:00", 7, 997136.12, 358.5, 999645.62, -0.28], ["2025-04-21 12:35:30", 7, 997136.12, 358.58, 999646.18, 0.0], ["2025-04-21 12:36:00", 8, 996777.49, 358.57, 999646.05, -0.48], ["2025-04-21 12:36:30", 8, 996777.49, 358.72, 999647.21, 0.0], ["2025-04-21 12:37:00", 9, 996418.59, 358.88, 999648.51, -0.18], ["2025-04-21 12:37:30", 9, 996418.59, 358.9, 999648.735, 0.0], ["2025-04-21 12:38:00", 9, 996418.59, 358.99, 999649.455, 0.0], ["2025-04-21 12:38:30", -1, 1000009.44, 359.12, 999650.325, -0.025], ["2025-04-21 12:39:00", 0, 999650.34, 359.1, 999650.34, -0.0], ["2025-04-21 12:39:30", 0, 999650.34, 359.09, 999650.34, 0.0], ["2025-04-21 12:40:00", 0, 999650.34, 359.22, 999650.34, 0.0], ["2025-04-21 12:40:30", 0, 999650.34, 359.18, 999650.34, 0.0], ["2025-04-21 12:41:00", 0, 999650.34, 359.26, 999650.34, 0.0], ["2025-04-21 12:41:30", 0, 999650.34, 359.35, 999650.34, 0.0], ["2025-04-21 12:42:00", 0, 999650.34, 359.32, 999650.34, 0.0], ["2025-04-21 12:42:30", 0, 999650.34, 359.39, 999650.34, 0.0], ["2025-04-21 12:43:00", 1, 999290.9, 359.41, 999650.315, -0.025], ["2025-04-21 12:43:30", 1, 999290.9, 359.48, 999650.375, 0.0], ["2025-04-21 12:44:00", 1, 999290.9, 359.44, 999650.345, 0.0], ["2025-04-21 12:44:30", 2, 998931.49, 359.38, 999650.26, -0.05], ["2025-04-21 12:45:00", 2, 998931.49, 359.5, 999650.49, 0.0], ["2025-04-21 12:45:30", 2, 998931.49, 359.58, 999650.65, 0.0], ["2025-04-21 12:46:00", 2, 998931.49, 359.6, 999650.68, 0.0], ["2025-04-21 12:46:30", 2, 998931.49, 359.42, 999650.33, 0.0], ["2025-04-21 12:47:00", 3, 998572.1, 359.38, 999650.255, -0.015], ["2025-04-21 12:47:30", 3, 998572.1, 359.26, 999649.895, 0.0], ["2025-04-21 12:48:00", 3, 998572.1, 359.12, 999649.475, 0.0], ["2025-04-21 12:48:30", 4, 998212.91, 359.12, 999649.41, -0.26], ["2025-04-21 12:49:00", 4, 998212.91, 359.13, 999649.43, 0.0], ["2025-04-21 12:49:30", 5, 997853.75, 359.16, 999649.55, 0.0], ["2025-04-21 12:50:00", 5, 997853.75, 359.06, 999649.025, 0.0], ["2025-04-21 12:50:30", 6, 997494.7, 359.02, 999648.82, -0.18], ["2025-04-21 12:51:00", 7, 997135.72, 358.98, 999648.58, 0.0], ["2025-04-21 12:51:30", 7, 997135.72, 358.88, 999647.845, 0.0], ["2025-04-21 12:52:00", 7, 997135.72, 358.77, 999647.145, 0.0], ["2025-04-21 12:52:30", 7, 997135.72, 358.75, 999646.935, 0.0], ["2025-04-21 12:53:00", 7, 997135.72, 358.72, 999646.76, 0.0], ["2025-04-21 12:53:30", 8, 996777.07, 358.64, 999646.19, -0.08], ["2025-04-21 12:54:00", 8, 996777.07, 358.75, 999647.03, 0.0], ["2025-04-21 12:54:30", 8, 996777.07, 358.72, 999646.79, 0.0], ["2025-04-21 12:55:00", 8, 996777.07, 358.53, 999645.31, 0.0], ["2025-04-21 12:55:30", 8, 996777.07, 358.56, 999645.55, 0.0], ["2025-04-21 12:56:00", 9, 996418.46, 358.59, 999645.725, -0.225], ["2025-04-21 12:56:30", -1, 1000003.79, 358.58, 999645.215, -0.035], ["2025-04-21 12:57:00", -1, 1000003.79, 358.64, 999645.145, 0.0], ["2025-04-21 12:57:30", -1, 1000003.79, 358.75, 999645.045, 0.0], ["2025-04-21 12:58:00", -1, 1000003.79, 358.64, 999645.15, 0.0], ["2025-04-21 12:58:30", -1, 1000003.79, 358.67, 999645.12, 0.0], ["2025-04-21 12:59:00", 0, 999645.06, 358.71, 999645.06, -0.0], ["2025-04-21 12:59:30", 0, 999645.06, 358.76, 999645.06, 0.0], ["2025-04-21 13:00:00", 0, 999645.06, 358.89, 999645.06, 0.0], ["2025-04-21 13:00:30", 0, 999645.06, 359.08, 999645.06, 0.0], ["2025-04-21 13:01:00", 0, 999645.06, 359.22, 999645.06, 0.0], ["2025-04-21 13:01:30", 0, 999645.06, 359.08, 999645.06, 0.0], ["2025-04-21 13:02:00", 0, 999645.06, 358.78, 999645.06, 0.0], ["2025-04-21 13:02:30", 0, 999645.06, 358.56, 999645.06, 0.0], ["2025-04-21 13:03:00", 0, 999645.06, 358.46, 999645.06, 0.0], ["2025-04-21 13:03:30", 0, 999645.06, 358.3, 999645.06, 0.0], ["2025-04-21 13:04:00", 1, 999286.71, 358.34, 999645.05, -0.01], ["2025-04-21 13:04:30", 1, 999286.71, 358.27, 999644.985, 0.0], ["2025-04-21 13:05:00", 1, 999286.71, 358.45, 999645.155, 0.0], ["2025-04-21 13:05:30", 1, 999286.71, 358.37, 999645.075, 0.0], ["2025-04-21 13:06:00", 2, 998928.36, 358.35, 999645.06, 0.0], ["2025-04-21 13:06:30", 2, 998928.36, 358.35, 999645.06, 0.0], ["2025-04-21 13:07:00", 2, 998928.36, 358.25, 999644.86, 0.0], ["2025-04-21 13:07:30", 2, 998928.36, 358.37, 999645.09, 0.0], ["2025-04-21 13:08:00", 2, 998928.36, 358.29, 999644.94, 0.0], ["2025-04-21 13:08:30", 3, 998570.09, 358.27, 999644.9, 0.0], ["2025-04-21 13:09:00", 3, 998570.09, 358.29, 999644.96, 0.0], ["2025-04-21 13:09:30", 3, 998570.09, 358.37, 999645.185, 0.0], ["2025-04-21 13:10:00", 3, 998570.09, 358.24, 999644.795, 0.0], ["2025-04-21 13:10:30", 4, 998211.87, 358.22, 999644.75, 0.0], ["2025-04-21 13:11:00", 4, 998211.87, 358.23, 999644.79, 0.0], ["2025-04-21 13:11:30", 4, 998211.87, 358.36, 999645.31, 0.0], ["2025-04-21 13:12:00", 4, 998211.87, 358.46, 999645.69, 0.0], ["2025-04-21 13:12:30", 4, 998211.87, 358.43, 999645.57, 0.0], ["2025-04-21 13:13:00", 4, 998211.87, 358.32, 999645.17, 0.0], ["2025-04-21 13:13:30", 4, 998211.87, 358.33, 999645.21, 0.0], ["2025-04-21 13:14:00", 4, 998211.87, 358.38, 999645.37, 0.0], ["2025-04-21 13:14:30", 5, 997853.51, 358.35, 999645.235, -0.075], ["2025-04-21 13:15:00", 6, 997495.11, 358.38, 999645.42, -0.09], ["2025-04-21 13:15:30", 6, 997495.11, 358.47, 999645.9, 0.0], ["2025-04-21 13:16:00", 7, 997136.66, 358.44, 999645.74, -0.07], ["2025-04-21 13:16:30", 7, 997136.66, 358.5, 999646.125, 0.0], ["2025-04-21 13:17:00", 7, 997136.66, 358.44, 999645.775, 0.0], ["2025-04-21 13:17:30", 7, 997136.66, 358.52, 999646.3, 0.0], ["2025-04-21 13:18:00", 7, 997136.66, 358.47, 999645.95, 0.0], ["2025-04-21 13:18:30", 8, 996778.17, 358.48, 999646.01, -0.08], ["2025-04-21 13:19:00", 8, 996778.17, 358.59, 999646.89, 0.0], ["2025-04-21 13:19:30", 8, 996778.17, 358.66, 999647.45, 0.0], ["2025-04-21 13:20:00", 8, 996778.17, 358.62, 999647.13, 0.0], ["2025-04-21 13:20:30", 8, 996778.17, 358.69, 999647.69, 0.0], ["2025-04-21 13:21:00", 8, 996778.17, 358.82, 999648.77, 0.0], ["2025-04-21 13:21:30", 8, 996778.17, 358.8, 999648.57, 0.0], ["2025-04-21 13:22:00", 8, 996778.17, 358.86, 999649.05, 0.0], ["2025-04-21 13:22:30", 8, 996778.17, 358.88, 999649.17, 0.0], ["2025-04-21 13:23:00", 9, 996419.25, 358.92, 999649.485, -0.045], ["2025-04-21 13:23:30", -1, 1000008.53, 358.94, 999649.59, -0.01], ["2025-04-21 13:24:00", -1, 1000008.53, 358.76, 999649.765, 0.0], ["2025-04-21 13:24:30", 0, 999650.01, 358.51, 999650.01, -0.0], ["2025-04-21 13:25:00", 0, 999650.01, 358.47, 999650.01, 0.0], ["2025-04-21 13:25:30", 0, 999650.01, 358.39, 999650.01, 0.0], ["2025-04-21 13:26:00", 0, 999650.01, 358.4, 999650.01, 0.0], ["2025-04-21 13:26:30", 1, 999291.56, 358.44, 999650.0, -0.01], ["2025-04-21 13:27:00", 1, 999291.56, 358.58, 999650.145, 0.0], ["2025-04-21 13:27:30", 1, 999291.56, 358.69, 999650.25, 0.0], ["2025-04-21 13:28:00", 1, 999291.56, 358.72, 999650.28, 0.0], ["2025-04-21 13:28:30", 1, 999291.56, 358.6, 999650.155, 0.0], ["2025-04-21 13:29:00", 2, 998933.02, 358.53, 999650.08, -0.02], ["2025-04-21 13:29:30", 3, 998574.5, 358.51, 999650.03, -0.03], ["2025-04-21 13:30:00", 4, 998216.0, 358.49, 999649.94, -0.06], ["2025-04-21 13:30:30", 4, 998216.0, 358.6, 999650.4, 0.0], ["2025-04-21 13:31:00", 5, 997857.31, 358.69, 999650.735, -0.025], ["2025-04-21 13:31:30", 5, 997857.31, 358.81, 999651.36, 0.0], ["2025-04-21 13:32:00", 5, 997857.31, 358.85, 999651.56, 0.0], ["2025-04-21 13:32:30", 6, 997498.49, 358.81, 999651.38, -0.03], ["2025-04-21 13:33:00", 6, 997498.49, 358.71, 999650.75, 0.0], ["2025-04-21 13:33:30", 7, 997139.92, 358.56, 999649.84, -0.07], ["2025-04-21 13:34:00", 7, 997139.92, 358.51, 999649.49, 0.0], ["2025-04-21 13:34:30", 8, 996781.44, 358.45, 999649.04, -0.24], ["2025-04-21 13:35:00", 9, 996423.01, 358.43, 999648.835, -0.045], ["2025-04-21 13:35:30", 9, 996423.01, 358.35, 999648.115, 0.0], ["2025-04-21 13:36:00", -1, 1000005.91, 358.29, 999647.62, -0.0], ["2025-04-21 13:36:30", -1, 1000005.91, 358.4, 999647.51, 0.0], ["2025-04-21 13:37:00", -1, 1000005.91, 358.37, 999647.545, 0.0], ["2025-04-21 13:37:30", 0, 999647.67, 358.23, 999647.67, -0.0], ["2025-04-21 13:38:00", 1, 999289.37, 358.29, 999647.66, -0.01], ["2025-04-21 13:38:30", 1, 999289.37, 358.37, 999647.74, 0.0], ["2025-04-21 13:39:00", 2, 998931.03, 358.33, 999647.69, -0.02], ["2025-04-21 13:39:30", 3, 998572.74, 358.28, 999647.58, -0.03], ["2025-04-21 13:40:00", 3, 998572.74, 358.31, 999647.685, 0.0], ["2025-04-21 13:40:30", 4, 998214.33, 358.39, 999647.91, -0.06], ["2025-04-21 13:41:00", 5, 997855.96, 358.36, 999647.76, -0.05], ["2025-04-21 13:41:30", 5, 997855.96, 358.32, 999647.56, 0.0], ["2025-04-21 13:42:00", 5, 997855.96, 358.24, 999647.135, 0.0], ["2025-04-21 13:42:30", 5, 997855.96, 358.23, 999647.11, 0.0], ["2025-04-21 13:43:00", 5, 997855.96, 358.13, 999646.635, 0.0], ["2025-04-21 13:43:30", 5, 997855.96, 358.1, 999646.46, 0.0], ["2025-04-21 13:44:00", 5, 997855.96, 358.06, 999646.285, 0.0], ["2025-04-21 13:44:30", 6, 997497.77, 358.19, 999646.88, -0.03], ["2025-04-21 13:45:00", 6, 997497.77, 358.07, 999646.22, 0.0], ["2025-04-21 13:45:30", 6, 997497.77, 358.1, 999646.34, 0.0], ["2025-04-21 13:46:00", 6, 997497.77, 358.01, 999645.86, 0.0], ["2025-04-21 13:46:30", 6, 997497.77, 357.92, 999645.32, 0.0], ["2025-04-21 13:47:00", 6, 997497.77, 357.83, 999644.75, 0.0], ["2025-04-21 13:47:30", 6, 997497.77, 357.78, 999644.45, 0.0], ["2025-04-21 13:48:00", 6, 997497.77, 357.73, 999644.15, 0.0], ["2025-04-21 13:48:30", 7, 997140.06, 357.71, 999644.03, 0.0], ["2025-04-21 13:49:00", 7, 997140.06, 357.6, 999643.26, 0.0], ["2025-04-21 13:49:30", 8, 996782.43, 357.62, 999643.39, -0.08], ["2025-04-21 13:50:00", 8, 996782.43, 357.71, 999644.15, 0.0], ["2025-04-21 13:50:30", 8, 996782.43, 357.85, 999645.19, 0.0], ["2025-04-21 13:51:00", 8, 996782.43, 357.81, 999644.91, 0.0], ["2025-04-21 13:51:30", 8, 996782.43, 357.56, 999642.87, 0.0], ["2025-04-21 13:52:00", 9, 996424.83, 357.6, 999643.185, -0.045], ["2025-04-21 13:52:30", 9, 996424.83, 357.62, 999643.365, 0.0], ["2025-04-21 13:53:00", 9, 996424.83, 357.52, 999642.555, 0.0], ["2025-04-21 13:53:30", 9, 996424.83, 357.44, 999641.835, 0.0], ["2025-04-21 13:54:00", -1, 1000000.43, 357.56, 999642.87, -0.0], ["2025-04-21 13:54:30", 0, 999642.86, 357.56, 999642.86, -0.0], ["2025-04-21 13:55:00", 0, 999642.86, 357.57, 999642.86, 0.0], ["2025-04-21 13:55:30", 1, 999285.27, 357.56, 999642.835, -0.025], ["2025-04-21 13:56:00", 1, 999285.27, 357.51, 999642.78, 0.0], ["2025-04-21 13:56:30", 1, 999285.27, 357.51, 999642.78, 0.0], ["2025-04-21 13:57:00", 1, 999285.27, 357.54, 999642.81, 0.0], ["2025-04-21 13:57:30", 1, 999285.27, 357.52, 999642.795, 0.0], ["2025-04-21 13:58:00", 1, 999285.27, 357.41, 999642.685, 0.0], ["2025-04-21 13:58:30", 1, 999285.27, 357.38, 999642.645, 0.0], ["2025-04-21 13:59:00", 2, 998927.87, 357.4, 999642.67, 0.0], ["2025-04-21 13:59:30", 2, 998927.87, 357.41, 999642.7, 0.0], ["2025-04-21 14:00:00", 2, 998927.87, 357.4, 999642.67, 0.0], ["2025-04-21 14:00:30", 2, 998927.87, 357.35, 999642.57, 0.0], ["2025-04-21 14:01:00", 2, 998927.87, 357.33, 999642.52, 0.0], ["2025-04-21 14:01:30", 3, 998570.49, 357.37, 999642.585, -0.045], ["2025-04-21 14:02:00", 3, 998570.49, 357.36, 999642.57, 0.0], ["2025-04-21 14:02:30", 3, 998570.49, 357.31, 999642.42, 0.0], ["2025-04-21 14:03:00", 3, 998570.49, 357.4, 999642.705, 0.0], ["2025-04-21 14:03:30", 4, 998213.05, 357.44, 999642.81, 0.0], ["2025-04-21 14:04:00", 5, 997855.62, 357.43, 999642.77, 0.0], ["2025-04-21 14:04:30", 5, 997855.62, 357.31, 999642.17, 0.0], ["2025-04-21 14:05:00", 5, 997855.62, 357.2, 999641.595, 0.0], ["2025-04-21 14:05:30", 5, 997855.62, 357.25, 999641.895, 0.0], ["2025-04-21 14:06:00", 5, 997855.62, 357.24, 999641.82, 0.0], ["2025-04-21 14:06:30", 5, 997855.62, 357.42, 999642.695, 0.0], ["2025-04-21 14:07:00", 5, 997855.62, 357.43, 999642.745, 0.0], ["2025-04-21 14:07:30", 5, 997855.62, 357.15, 999641.395, 0.0], ["2025-04-21 14:08:00", 6, 997498.57, 357.05, 999640.84, -0.03], ["2025-04-21 14:08:30", 7, 997141.45, 357.12, 999641.29, 0.0], ["2025-04-21 14:09:00", 7, 997141.45, 357.05, 999640.8, 0.0], ["2025-04-21 14:09:30", 7, 997141.45, 357.01, 999640.52, 0.0], ["2025-04-21 14:10:00", 7, 997141.45, 357.08, 999640.975, 0.0], ["2025-04-21 14:10:30", 8, 996784.45, 357.0, 999640.45, 0.0], ["2025-04-21 14:11:00", 8, 996784.45, 357.11, 999641.33, 0.0], ["2025-04-21 14:11:30", 9, 996427.25, 357.2, 999642.05, 0.0], ["2025-04-21 14:12:00", 9, 996427.25, 357.14, 999641.555, 0.0], ["2025-04-21 14:12:30", 9, 996427.25, 357.21, 999642.095, 0.0], ["2025-04-21 14:13:00", 9, 996427.25, 357.13, 999641.465, 0.0], ["2025-04-21 14:13:30", 9, 996427.25, 357.12, 999641.375, 0.0], ["2025-04-21 14:14:00", 9, 996427.25, 357.1, 999641.15, 0.0], ["2025-04-21 14:14:30", 9, 996427.25, 357.22, 999642.23, 0.0], ["2025-04-21 14:15:00", 9, 996427.25, 357.24, 999642.365, 0.0], ["2025-04-21 14:15:30", 9, 996427.25, 357.26, 999642.59, 0.0], ["2025-04-21 14:16:00", 9, 996427.25, 357.33, 999643.22, 0.0], ["2025-04-21 14:16:30", -1, 1000001.55, 357.43, 999644.12, -0.0], ["2025-04-21 14:17:00", -1, 1000001.55, 357.47, 999644.085, 0.0], ["2025-04-21 14:17:30", -1, 1000001.55, 357.51, 999644.035, 0.0], ["2025-04-21 14:18:00", -1, 1000001.55, 357.61, 999643.945, 0.0], ["2025-04-21 14:18:30", 0, 999643.96, 357.57, 999643.96, -0.0], ["2025-04-21 14:19:00", 0, 999643.96, 357.59, 999643.96, 0.0], ["2025-04-21 14:19:30", 0, 999643.96, 357.49, 999643.96, 0.0], ["2025-04-21 14:20:00", 0, 999643.96, 357.43, 999643.96, 0.0], ["2025-04-21 14:20:30", 0, 999643.96, 357.44, 999643.96, 0.0], ["2025-04-21 14:21:00", 1, 999286.62, 357.33, 999643.955, -0.005], ["2025-04-21 14:21:30", 1, 999286.62, 357.38, 999643.995, 0.0], ["2025-04-21 14:22:00", 1, 999286.62, 357.34, 999643.96, 0.0], ["2025-04-21 14:22:30", 1, 999286.62, 357.38, 999643.995, 0.0], ["2025-04-21 14:23:00", 1, 999286.62, 357.32, 999643.945, 0.0], ["2025-04-21 14:23:30", 1, 999286.62, 357.29, 999643.91, 0.0], ["2025-04-21 14:24:00", 2, 998929.34, 357.28, 999643.9, 0.0], ["2025-04-21 14:24:30", 3, 998572.07, 357.27, 999643.88, 0.0], ["2025-04-21 14:25:00", 3, 998572.07, 357.2, 999643.67, 0.0], ["2025-04-21 14:25:30", 4, 998214.91, 357.16, 999643.55, 0.0], ["2025-04-21 14:26:00", 5, 997857.74, 357.17, 999643.59, 0.0], ["2025-04-21 14:26:30", 6, 997500.54, 357.19, 999643.68, -0.06], ["2025-04-21 14:27:00", 6, 997500.54, 357.27, 999644.16, 0.0], ["2025-04-21 14:27:30", 7, 997143.17, 357.36, 999644.655, -0.105], ["2025-04-21 14:28:00", 7, 997143.17, 357.38, 999644.83, 0.0], ["2025-04-21 14:28:30", 8, 996785.82, 357.35, 999644.58, -0.04], ["2025-04-21 14:29:00", 8, 996785.82, 357.31, 999644.26, 0.0], ["2025-04-21 14:29:30", 9, 996428.46, 357.35, 999644.61, -0.09], ["2025-04-21 14:30:00", 9, 996428.46, 357.5, 999645.96, 0.0], ["2025-04-21 14:30:30", 9, 996428.46, 357.64, 999647.22, 0.0], ["2025-04-21 14:31:00", -1, 1000005.56, 357.71, 999647.85, -0.0], ["2025-04-21 14:31:30", -1, 1000005.56, 357.77, 999647.785, 0.0], ["2025-04-21 14:32:00", -1, 1000005.56, 357.56, 999648.0, 0.0], ["2025-04-21 14:32:30", -2, 1000362.97, 357.41, 999648.15, -0.0], ["2025-04-21 14:33:00", -2, 1000362.97, 357.43, 999648.11, 0.0], ["2025-04-21 14:33:30", -2, 1000362.97, 357.49, 999648.0, 0.0], ["2025-04-21 14:34:00", -2, 1000362.97, 357.54, 999647.89, 0.0], ["2025-04-21 14:34:30", -2, 1000362.97, 357.54, 999647.89, 0.0], ["2025-04-21 14:35:00", -2, 1000362.97, 357.6, 999647.78, 0.0], ["2025-04-21 14:35:30", -2, 1000362.97, 357.52, 999647.92, 0.0], ["2025-04-21 14:36:00", -2, 1000362.97, 357.49, 999647.99, 0.0], ["2025-04-21 14:36:30", -2, 1000362.97, 357.28, 999648.41, 0.0], ["2025-04-21 14:37:00", -1, 1000005.75, 357.2, 999648.55, 0.02], ["2025-04-21 14:37:30", 0, 999648.53, 357.19, 999648.53, -0.0], ["2025-04-21 14:38:00", 0, 999648.53, 357.25, 999648.53, 0.0], ["2025-04-21 14:38:30", 0, 999648.53, 357.25, 999648.53, 0.0], ["2025-04-21 14:39:00", 0, 999648.53, 357.16, 999648.53, 0.0], ["2025-04-21 14:39:30", 0, 999648.53, 357.21, 999648.53, 0.0], ["2025-04-21 14:40:00", 0, 999648.53, 357.16, 999648.53, 0.0], ["2025-04-21 14:40:30", 0, 999648.53, 357.04, 999648.53, 0.0], ["2025-04-21 14:41:00", 0, 999648.53, 356.93, 999648.53, 0.0], ["2025-04-21 14:41:30", 0, 999648.53, 356.85, 999648.53, 0.0], ["2025-04-21 14:42:00", 1, 999291.69, 356.83, 999648.52, -0.01], ["2025-04-21 14:42:30", 2, 998934.91, 356.76, 999648.44, -0.03], ["2025-04-21 14:43:00", 2, 998934.91, 356.74, 999648.39, 0.0], ["2025-04-21 14:43:30", 2, 998934.91, 356.66, 999648.24, 0.0], ["2025-04-21 14:44:00", 2, 998934.91, 356.59, 999648.09, 0.0], ["2025-04-21 14:44:30", 3, 998578.27, 356.63, 999648.16, -0.03], ["2025-04-21 14:45:00", 3, 998578.27, 356.63, 999648.16, 0.0], ["2025-04-21 14:45:30", 3, 998578.27, 356.73, 999648.445, 0.0], ["2025-04-21 14:46:00", 4, 998221.73, 356.54, 999647.89, 0.0], ["2025-04-21 14:46:30", 4, 998221.73, 356.53, 999647.85, 0.0], ["2025-04-21 14:47:00", 4, 998221.73, 356.52, 999647.83, 0.0], ["2025-04-21 14:47:30", 4, 998221.73, 356.4, 999647.33, 0.0], ["2025-04-21 14:48:00", 4, 998221.73, 356.34, 999647.07, 0.0], ["2025-04-21 14:48:30", 5, 997865.36, 356.37, 999647.21, 0.0], ["2025-04-21 14:49:00", 5, 997865.36, 356.26, 999646.685, 0.0], ["2025-04-21 14:49:30", 5, 997865.36, 356.36, 999647.135, 0.0], ["2025-04-21 14:50:00", 5, 997865.36, 356.39, 999647.31, 0.0], ["2025-04-21 14:50:30", 5, 997865.36, 356.27, 999646.735, 0.0], ["2025-04-21 14:51:00", 5, 997865.36, 356.21, 999646.41, 0.0], ["2025-04-21 14:51:30", 6, 997509.12, 356.21, 999646.35, -0.21], ["2025-04-21 14:52:00", 6, 997509.12, 356.11, 999645.75, 0.0], ["2025-04-21 14:52:30", 6, 997509.12, 355.97, 999644.91, 0.0], ["2025-04-21 14:53:00", 6, 997509.12, 355.93, 999644.7, 0.0], ["2025-04-21 14:53:30", 6, 997509.12, 355.86, 999644.25, 0.0], ["2025-04-21 14:54:00", 6, 997509.12, 355.79, 999643.86, 0.0], ["2025-04-21 14:54:30", 6, 997509.12, 355.77, 999643.77, 0.0], ["2025-04-21 14:55:00", 6, 997509.12, 355.75, 999643.59, 0.0], ["2025-04-21 14:55:30", 7, 997153.34, 355.77, 999643.73, -0.07], ["2025-04-21 14:56:00", 7, 997153.34, 355.77, 999643.73, 0.0], ["2025-04-21 14:56:30", 7, 997153.34, 355.86, 999644.36, 0.0], ["2025-04-21 14:57:00", 7, 997153.34, 355.89, 999644.57, 0.0], ["2025-04-21 14:57:30", 7, 997153.34, 355.88, 999644.535, 0.0], ["2025-04-21 14:58:00", 7, 997153.34, 355.86, 999644.325, 0.0], ["2025-04-21 14:58:30", 7, 997153.34, 355.87, 999644.43, 0.0], ["2025-04-21 14:59:00", 7, 997153.34, 355.92, 999644.745, 0.0], ["2025-04-21 14:59:30", 7, 997153.34, 355.89, 999644.57, 0.0], ["2025-04-21 15:00:00", 7, 997153.34, 356.0, 999645.305, 0.0], ["2025-04-21 15:00:30", 7, 997153.34, 356.21, 999646.845, 0.0], ["2025-04-21 15:01:00", 7, 997153.34, 356.34, 999647.72, 0.0], ["2025-04-21 15:01:30", 7, 997153.34, 356.39, 999648.07, 0.0], ["2025-04-21 15:02:00", 7, 997153.34, 356.47, 999648.63, 0.0], ["2025-04-21 15:02:30", 7, 997153.34, 356.57, 999649.365, 0.0], ["2025-04-21 15:03:00", 7, 997153.34, 356.5, 999648.875, 0.0], ["2025-04-21 15:03:30", 7, 997153.34, 356.41, 999648.245, 0.0], ["2025-04-21 15:04:00", 7, 997153.34, 356.56, 999649.295, 0.0], ["2025-04-21 15:04:30", 7, 997153.34, 356.63, 999649.785, 0.0], ["2025-04-21 15:05:00", 7, 997153.34, 356.65, 999649.925, 0.0], ["2025-04-21 15:05:30", 7, 997153.34, 356.61, 999649.575, 0.0], ["2025-04-21 15:06:00", 7, 997153.34, 356.66, 999649.995, 0.0], ["2025-04-21 15:06:30", 7, 997153.34, 356.68, 999650.065, 0.0], ["2025-04-21 15:07:00", 7, 997153.34, 356.69, 999650.135, 0.0], ["2025-04-21 15:07:30", 7, 997153.34, 356.68, 999650.1, 0.0], ["2025-04-21 15:08:00", 7, 997153.34, 356.56, 999649.295, 0.0], ["2025-04-21 15:08:30", 8, 996796.66, 356.68, 999650.1, 0.0], ["2025-04-21 15:09:00", 8, 996796.66, 356.62, 999649.62, 0.0], ["2025-04-21 15:09:30", 8, 996796.66, 356.71, 999650.34, 0.0], ["2025-04-21 15:10:00", 8, 996796.66, 356.86, 999651.5, 0.0], ["2025-04-21 15:10:30", 8, 996796.66, 356.87, 999651.62, 0.0], ["2025-04-21 15:11:00", 8, 996796.66, 356.86, 999651.54, 0.0], ["2025-04-21 15:11:30", 8, 996796.66, 356.9, 999651.9, 0.0], ["2025-04-21 15:12:00", 8, 996796.66, 357.04, 999653.02, 0.0], ["2025-04-21 15:12:30", 8, 996796.66, 357.05, 999653.06, 0.0], ["2025-04-21 15:13:00", 8, 996796.66, 357.1, 999653.46, 0.0], ["2025-04-21 15:13:30", 9, 996439.56, 357.11, 999653.505, 0.045], ["2025-04-21 15:14:00", 9, 996439.56, 357.09, 999653.325, 0.0], ["2025-04-21 15:14:30", -1, 1000010.13, 357.07, 999653.055, -0.015], ["2025-04-21 15:15:00", -1, 1000010.13, 357.17, 999652.96, 0.0], ["2025-04-21 15:15:30", -1, 1000010.13, 357.15, 999652.975, 0.0], ["2025-04-21 15:16:00", -1, 1000010.13, 357.16, 999652.965, 0.0], ["2025-04-21 15:16:30", -1, 1000010.13, 357.01, 999653.115, 0.0], ["2025-04-21 15:17:00", -1, 1000010.13, 357.05, 999653.075, 0.0], ["2025-04-21 15:17:30", -1, 1000010.13, 357.11, 999653.02, 0.0], ["2025-04-21 15:18:00", -1, 1000010.13, 357.26, 999652.865, 0.0], ["2025-04-21 15:18:30", -1, 1000010.13, 357.36, 999652.77, 0.0], ["2025-04-21 15:19:00", -1, 1000010.13, 357.43, 999652.7, 0.0], ["2025-04-21 15:19:30", -1, 1000010.13, 357.37, 999652.76, 0.0], ["2025-04-21 15:20:00", -1, 1000010.13, 357.46, 999652.67, 0.0], ["2025-04-21 15:20:30", -1, 1000010.13, 357.52, 999652.605, 0.0], ["2025-04-21 15:21:00", -1, 1000010.13, 357.54, 999652.59, 0.0], ["2025-04-21 15:21:30", -1, 1000010.13, 357.62, 999652.51, 0.0], ["2025-04-21 15:22:00", -1, 1000010.13, 357.62, 999652.515, 0.0], ["2025-04-21 15:22:30", -1, 1000010.13, 357.66, 999652.465, 0.0], ["2025-04-21 15:23:00", -1, 1000010.13, 357.75, 999652.385, 0.0], ["2025-04-21 15:23:30", -1, 1000010.13, 357.56, 999652.565, 0.0], ["2025-04-21 15:24:00", -1, 1000010.13, 357.56, 999652.57, 0.0], ["2025-04-21 15:24:30", -1, 1000010.13, 357.51, 999652.62, 0.0], ["2025-04-21 15:25:00", -1, 1000010.13, 357.43, 999652.7, 0.0], ["2025-04-21 15:25:30", -1, 1000010.13, 357.42, 999652.71, 0.0], ["2025-04-21 15:26:00", -1, 1000010.13, 357.44, 999652.685, 0.0], ["2025-04-21 15:26:30", -1, 1000010.13, 357.38, 999652.755, 0.0], ["2025-04-21 15:27:00", -1, 1000010.13, 357.15, 999652.98, 0.0], ["2025-04-21 15:27:30", -1, 1000010.13, 357.1, 999653.03, 0.0], ["2025-04-21 15:28:00", -1, 1000010.13, 357.11, 999653.025, 0.0], ["2025-04-21 15:28:30", -1, 1000010.13, 356.99, 999653.145, 0.0], ["2025-04-21 15:29:00", 0, 999653.19, 356.93, 999653.19, -0.0], ["2025-04-21 15:29:30", 0, 999653.19, 356.95, 999653.19, 0.0], ["2025-04-21 15:30:00", 0, 999653.19, 357.21, 999653.19, 0.0], ["2025-04-21 15:30:30", 0, 999653.19, 357.17, 999653.19, 0.0], ["2025-04-21 15:31:00", 0, 999653.19, 357.24, 999653.19, 0.0], ["2025-04-21 15:31:30", 0, 999653.19, 357.37, 999653.19, 0.0], ["2025-04-21 15:32:00", 0, 999653.19, 357.47, 999653.19, 0.0], ["2025-04-21 15:32:30", 0, 999653.19, 357.57, 999653.19, 0.0], ["2025-04-21 15:33:00", 0, 999653.19, 357.53, 999653.19, 0.0], ["2025-04-21 15:33:30", 0, 999653.19, 357.7, 999653.19, 0.0], ["2025-04-21 15:34:00", 0, 999653.19, 357.52, 999653.19, 0.0], ["2025-04-21 15:34:30", 0, 999653.19, 357.47, 999653.19, 0.0], ["2025-04-21 15:35:00", 0, 999653.19, 357.71, 999653.19, 0.0], ["2025-04-21 15:35:30", 0, 999653.19, 357.63, 999653.19, 0.0], ["2025-04-21 15:36:00", 0, 999653.19, 357.61, 999653.19, 0.0], ["2025-04-21 15:36:30", 0, 999653.19, 357.75, 999653.19, 0.0], ["2025-04-21 15:37:00", 0, 999653.19, 358.18, 999653.19, 0.0], ["2025-04-21 15:37:30", 0, 999653.19, 358.12, 999653.19, 0.0], ["2025-04-21 15:38:00", 0, 999653.19, 358.01, 999653.19, 0.0], ["2025-04-21 15:38:30", 0, 999653.19, 358.18, 999653.19, 0.0], ["2025-04-21 15:39:00", 0, 999653.19, 358.1, 999653.19, 0.0], ["2025-04-21 15:39:30", 0, 999653.19, 358.06, 999653.19, 0.0], ["2025-04-21 15:40:00", 0, 999653.19, 358.19, 999653.19, 0.0], ["2025-04-21 15:40:30", 0, 999653.19, 358.38, 999653.19, 0.0], ["2025-04-21 15:41:00", 0, 999653.19, 358.28, 999653.19, 0.0], ["2025-04-21 15:41:30", 0, 999653.19, 358.19, 999653.19, 0.0], ["2025-04-21 15:42:00", 0, 999653.19, 358.28, 999653.19, 0.0], ["2025-04-21 15:42:30", 0, 999653.19, 358.33, 999653.19, 0.0], ["2025-04-21 15:43:00", 0, 999653.19, 358.32, 999653.19, 0.0], ["2025-04-21 15:43:30", 0, 999653.19, 358.43, 999653.19, 0.0], ["2025-04-21 15:44:00", 0, 999653.19, 358.5, 999653.19, 0.0], ["2025-04-21 15:44:30", 0, 999653.19, 358.38, 999653.19, 0.0], ["2025-04-21 15:45:00", 0, 999653.19, 358.35, 999653.19, 0.0], ["2025-04-21 15:45:30", 0, 999653.19, 358.27, 999653.19, 0.0], ["2025-04-21 15:46:00", 0, 999653.19, 358.39, 999653.19, 0.0], ["2025-04-21 15:46:30", 0, 999653.19, 358.24, 999653.19, 0.0], ["2025-04-21 15:47:00", 0, 999653.19, 358.05, 999653.19, 0.0], ["2025-04-21 15:47:30", 0, 999653.19, 357.96, 999653.19, 0.0], ["2025-04-21 15:48:00", 0, 999653.19, 358.14, 999653.19, 0.0], ["2025-04-21 15:48:30", 1, 999294.91, 358.27, 999653.185, -0.005], ["2025-04-21 15:49:00", 1, 999294.91, 358.32, 999653.235, 0.0], ["2025-04-21 15:49:30", 1, 999294.91, 358.23, 999653.135, 0.0], ["2025-04-21 15:50:00", 1, 999294.91, 357.93, 999652.84, 0.0], ["2025-04-21 15:50:30", 1, 999294.91, 358.22, 999653.125, 0.0], ["2025-04-21 15:51:00", 1, 999294.91, 358.44, 999653.345, 0.0], ["2025-04-21 15:51:30", 1, 999294.91, 358.63, 999653.54, 0.0], ["2025-04-21 15:52:00", 1, 999294.91, 358.44, 999653.35, 0.0], ["2025-04-21 15:52:30", 1, 999294.91, 358.19, 999653.1, 0.0], ["2025-04-21 15:53:00", 1, 999294.91, 358.38, 999653.29, 0.0], ["2025-04-21 15:53:30", 1, 999294.91, 358.51, 999653.425, 0.0], ["2025-04-21 15:54:00", 1, 999294.91, 358.16, 999653.07, 0.0], ["2025-04-21 15:54:30", 1, 999294.91, 358.56, 999653.475, 0.0], ["2025-04-21 15:55:00", 1, 999294.91, 359.21, 999654.115, 0.0], ["2025-04-21 15:55:30", 1, 999294.91, 359.3, 999654.21, 0.0], ["2025-04-21 15:56:00", 1, 999294.91, 359.32, 999654.23, 0.0], ["2025-04-21 15:56:30", 1, 999294.91, 359.38, 999654.295, 0.0], ["2025-04-21 15:57:00", 1, 999294.91, 359.42, 999654.33, 0.0], ["2025-04-21 15:57:30", 1, 999294.91, 359.48, 999654.39, 0.0], ["2025-04-21 15:58:00", 1, 999294.91, 359.61, 999654.52, 0.0], ["2025-04-21 15:58:30", 1, 999294.91, 359.55, 999654.455, 0.0], ["2025-04-21 15:59:00", 1, 999294.91, 359.36, 999654.27, 0.0], ["2025-04-21 15:59:30", 1, 999294.91, 359.1, 999654.005, 0.0]];
+
+        // Define the dt_args
+        let dt_args = {"layout": {"topStart": "pageLength", "topEnd": "search", "bottomStart": "info", "bottomEnd": "paging"}, "mode": "inline", "order": [], "warn_on_selected_rows_not_rendered": true};
+        dt_args["data"] = data;
+
+        
+        new DataTable(table, dt_args);
+    });
+</script>
+</div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
