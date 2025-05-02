@@ -9,10 +9,9 @@ execute:
 jupyter: python3
 ---
 
-### **mag7Alpha** {.test}
-
-Walk us through a single trade. Entry signal / exit signal, plus other rules like stop-loss.
-Our strategy is market-making on the Mag7 stocks, which includes Alphabet, Amazon, Apple, Meta, Microsoft, NVDIA, and Tesla. For this example, we will choose Microsoft. We will use the Stoikov market-making strategy, so we will need two main equations:
+### **Strategy Overview** {.test}
+Market makers are large financial institutions who act as intermediaries between buyers and sellers. They provide liquidity to traders, taking orders on both sides and reducing the difference between ask and bid price for assets. Market makers make profit from bid ask spreads.
+Our strategy is market-making on the Mag7 stocks, which includes Alphabet, Amazon, Apple, Meta, Microsoft, NVDIA, and Tesla. We will use the Stoikov market-making strategy, so we will need two main equations:
 The first calculates the reservation price based on the equation:
 
 ![Reservation Price](Equation.png)
@@ -37,8 +36,6 @@ t = current time (T is normalized = 1, so t is a time fraction)
 Entry conditions:
 We want to create symmetrical bid and ask orders around the market mid-price, but this could lead to the inventory skewing in one direction if there are significant market movements in one direction. The reference price is where the buy and sell orders will be created around.
 
-Can run a few different γ (risk aversion parameter) to determine optimal for P&L.
-
 After calculating reservation price and optimal bid ask spreads:
 Bid offer price = reservation price — optimal spread / 2
 Ask offer price = reservation price + optimal spread / 2
@@ -50,7 +47,7 @@ Exit conditions:
 As the trading day goes on, each parameter of the models will change, and new values for reservation price and optimal spreads will be calculated. We then  set new orders based on the new parameters. This cycle continues indefinitely until the end of our backtesting period.
 
 Stop Loss:
-We will use average true range (ATR) to set a stop loss, around 1.5x or 2x ATR. This adjusts our stop loss based on volatility.
+We will use average true range (ATR) to set a stop loss, around 2x ATR. This adjusts our stop loss based on volatility.
 
 Higher ATR → Widen stops to avoid noise and premature execution.
 Lower ATR → Tighten stops to lock in profits and exit in cases of volatility spikes.
