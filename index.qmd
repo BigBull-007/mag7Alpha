@@ -103,3 +103,60 @@ ledger = pd.read_csv("ledger.csv")
 show(ledger)
 
 ```
+
+### Portfolio Value Over Time
+```{python}
+#| echo: false
+import pandas as pd
+import plotly.express as px
+import plotly.io as pio
+
+pio.renderers.default = "iframe_connected"
+
+# Load ledger
+ledger = pd.read_csv("ledger.csv")
+ledger['timestamp'] = pd.to_datetime(ledger['timestamp'])
+
+# Create line chart of portfolio value
+fig = px.line(
+    ledger,
+    x='timestamp',
+    y='portfolio_value',
+    title='Portfolio Value Over Time',
+    labels={'timestamp': 'Time', 'portfolio_value': 'Portfolio Value ($)'},
+    template='plotly_white'
+)
+fig.update_layout(
+    yaxis_tickformat=',',  # Adds commas: e.g., 100,000
+)
+fig.show()
+```
+
+
+### Inventory Level Over Time
+```{python}
+#| echo: false
+import pandas as pd
+import plotly.express as px
+import plotly.io as pio
+
+pio.renderers.default = "iframe_connected"
+
+# Load data
+ledger = pd.read_csv("ledger.csv")
+ledger['timestamp'] = pd.to_datetime(ledger['timestamp'])
+
+# Create chart
+fig = px.line(
+    ledger,
+    x='timestamp',
+    y='inventory',
+    title='Inventory Over Time',
+    labels={'inventory': 'Inventory Level', 'timestamp': 'Time'},
+    template='plotly_white'
+)
+
+# Show chart
+fig.show()
+
+```

@@ -123,6 +123,8 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#blotter" id="toc-blotter" class="nav-link" data-scroll-target="#blotter">Blotter:</a></li>
   <li><a href="#ledger" id="toc-ledger" class="nav-link" data-scroll-target="#ledger">Ledger:</a></li>
+  <li><a href="#portfolio-value-over-time" id="toc-portfolio-value-over-time" class="nav-link" data-scroll-target="#portfolio-value-over-time">Portfolio Value Over Time</a></li>
+  <li><a href="#inventory-level-over-time" id="toc-inventory-level-over-time" class="nav-link" data-scroll-target="#inventory-level-over-time">Inventory Level Over Time</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -171,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
 <p>After calculating reservation price and optimal bid ask spreads: Bid offer price = reservation price — optimal spread / 2 Ask offer price = reservation price + optimal spread / 2</p>
 <p>We then enter into limit orders on both sides of this quote.</p>
 <p>Exit conditions: As the trading day goes on, each parameter of the models will change, and new values for reservation price and optimal spreads will be calculated. We then set new orders based on the new parameters. This cycle continues indefinitely until the end of our backtesting period.</p>
-<p>Stop Loss: We will use average true range (ATR) to set a stop loss, around 1.5x or 2x ATR. This adjusts our stop loss based on volatility.</p>
+<p>Stop Loss: We will use average true range (ATR) to set a stop loss, around 2x ATR. This adjusts our stop loss based on volatility.</p>
 <p>Higher ATR → Widen stops to avoid noise and premature execution. Lower ATR → Tighten stops to lock in profits and exit in cases of volatility spikes.</p>
 <p>Data: We can use ShinyBroker to obtain most of the assets’ attributes, such as price throughout the day, volatility, and timing, via fetch_historical_data. We also need to get technical indicators like ATR, which we can use an external Python library for, like Technical Analysis’ ta.volatility.AverageTrueRange().</p>
 <p>Here are the 7 stocks that we trade and their tickers.</p>
@@ -219,9 +221,9 @@ ul.task-list li input[type="checkbox"] {
 </table>
 <section id="blotter" class="level3">
 <h3 class="anchored" data-anchor-id="blotter">Blotter:</h3>
-<div id="2ca3f06b" class="cell" data-execution_count="1">
+<div id="15a766bb" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
-<table id="itables_a6cad1f3_d7d7_4365_b8f6_f53e7c21dcf3" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto;margin:auto;caption-side:bottom">
+<table id="itables_b3d5318d_0378_4cf1_9f7a_fd648670f482" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto;margin:auto;caption-side:bottom">
 <thead>
     <tr style="text-align: right;">
       
@@ -300,7 +302,7 @@ Loading ITables v2.3.0 from the internet...
 <script type="module">
     import {DataTable, jQuery as $} from 'https://www.unpkg.com/dt_for_itables@2.2.0/dt_bundle.js';
 
-    document.querySelectorAll("#itables_a6cad1f3_d7d7_4365_b8f6_f53e7c21dcf3:not(.dataTable)").forEach(table => {
+    document.querySelectorAll("#itables_b3d5318d_0378_4cf1_9f7a_fd648670f482:not(.dataTable)").forEach(table => {
         if (!(table instanceof HTMLTableElement))
             return;
 
@@ -320,9 +322,9 @@ Loading ITables v2.3.0 from the internet...
 </section>
 <section id="ledger" class="level3">
 <h3 class="anchored" data-anchor-id="ledger">Ledger:</h3>
-<div id="7c887602" class="cell" data-execution_count="2">
+<div id="e1c700c8" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
-<table id="itables_4b135e38_5a07_4e52_8b95_daf38fb5a27f" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto;margin:auto;caption-side:bottom">
+<table id="itables_3ce40a48_8a72_46b2_a19c_67561ac512e4" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto;margin:auto;caption-side:bottom">
 <thead>
     <tr style="text-align: right;">
       
@@ -400,7 +402,7 @@ Loading ITables v2.3.0 from the internet...
 <script type="module">
     import {DataTable, jQuery as $} from 'https://www.unpkg.com/dt_for_itables@2.2.0/dt_bundle.js';
 
-    document.querySelectorAll("#itables_4b135e38_5a07_4e52_8b95_daf38fb5a27f:not(.dataTable)").forEach(table => {
+    document.querySelectorAll("#itables_3ce40a48_8a72_46b2_a19c_67561ac512e4:not(.dataTable)").forEach(table => {
         if (!(table instanceof HTMLTableElement))
             return;
 
@@ -415,6 +417,22 @@ Loading ITables v2.3.0 from the internet...
         new DataTable(table, dt_args);
     });
 </script>
+</div>
+</div>
+</section>
+<section id="portfolio-value-over-time" class="level3">
+<h3 class="anchored" data-anchor-id="portfolio-value-over-time">Portfolio Value Over Time</h3>
+<div id="874702c2" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display">
+<iframe scrolling="no" width="100%" height="545px" src="iframe_figures/figure_3.html" frameborder="0" allowfullscreen=""></iframe>
+</div>
+</div>
+</section>
+<section id="inventory-level-over-time" class="level3">
+<h3 class="anchored" data-anchor-id="inventory-level-over-time">Inventory Level Over Time</h3>
+<div id="86f7c8f5" class="cell" data-execution_count="4">
+<div class="cell-output cell-output-display">
+<iframe scrolling="no" width="100%" height="545px" src="iframe_figures/figure_4.html" frameborder="0" allowfullscreen=""></iframe>
 </div>
 </div>
 
