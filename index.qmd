@@ -16,29 +16,29 @@ The first calculates the reservation price based on the equation:
 
 ![Reservation Price](Equation.png)
 
-s = current market mid price
-q = quantity of assets in inventory of base asset (could be positive/negative for long/short positions)
-σ = market volatility
-T = closing time, when the measurement period ends (conveniently normalized to 1)
-t = current time (T is normalized = 1, so t is a time fraction)
+s = current market mid price<br>
+q = quantity of assets in inventory of base asset (could be positive/negative for long/short positions)<br>
+σ = market volatility<br>
+T = closing time, when the measurement period ends (conveniently normalized to 1)<br>
+t = current time (T is normalized = 1, so t is a time fraction)<br>
 
 The second sets optimal bid-ask spread using the equation:
 
 ![Optimal Bid-Ask Spread](BidaskSpread.png)
 
-σ = market volatility
-T = closing time, when the measurement period ends (conveniently normalized to 1)
-t = current time (T is normalized = 1, so t is a time fraction)
-δa, δb = bid/ask spread, symmetrical → δa=δb
-γ = inventory risk aversion parameter
-κ = order book liquidity parameter
+σ = market volatility<br>
+T = closing time, when the measurement period ends (conveniently normalized to 1)<br>
+t = current time (T is normalized = 1, so t is a time fraction)<br>
+δa, δb = bid/ask spread, symmetrical → δa=δb<br>
+γ = inventory risk aversion parameter<br>
+κ = order book liquidity parameter<br>
 
 Entry conditions:
 We want to create symmetrical bid and ask orders around the market mid-price, but this could lead to the inventory skewing in one direction if there are significant market movements in one direction. The reference price is where the buy and sell orders will be created around.
 
-After calculating reservation price and optimal bid ask spreads:
-Bid offer price = reservation price — optimal spread / 2
-Ask offer price = reservation price + optimal spread / 2
+After calculating reservation price and optimal bid ask spreads:<br>
+Bid offer price = reservation price — optimal spread / 2<br>
+Ask offer price = reservation price + optimal spread / 2<br>
 
 We then enter into limit orders on both sides of this quote.
 
@@ -142,14 +142,14 @@ fig.show()
 
 ```
 
-Alpha: 1.2683641851897157e-06
-Beta: 0.0013455253367804282
-benchmark_volatility_annualized: 0.07183856080115263
-asset_volatility_annualized: 0.00022642370194626593
-benchmark_geometric_mean: 0.9999813518481299
-benchmark_arithmetic_mean: -1.8648325749104094e-05
-asset_geometric_mean: 1.0000012432731633
-asset_arithmetic_mean: 1.2432723904057614e-06
-Sharpe Ratio: 0.005490910976717492
-Average Return per Trade: 1.2608092485550546
-Average Number of Trades per Year: 4357.810344827586
+Alpha: 1.2683641851897157e-06<br>
+Beta: 0.0013455253367804282<br>
+benchmark_volatility_annualized: 0.07183856080115263<br>
+asset_volatility_annualized: 0.00022642370194626593<br>
+benchmark_geometric_mean: 0.9999813518481299<br>
+benchmark_arithmetic_mean: -1.8648325749104094e-05<br>
+asset_geometric_mean: 1.0000012432731633<br>
+asset_arithmetic_mean: 1.2432723904057614e-06<br>
+Sharpe Ratio: 0.005490910976717492<br>
+Average Return per Trade: 1.2608092485550546<br>
+Average Number of Trades per Year: 4357.810344827586<br>

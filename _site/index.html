@@ -68,7 +68,10 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
 
+
+
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
 
 
 <link rel="stylesheet" href="styles.css">
@@ -154,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>Reservation Price</figcaption>
 </figure>
 </div>
-<p>s = current market mid price q = quantity of assets in inventory of base asset (could be positive/negative for long/short positions) σ = market volatility T = closing time, when the measurement period ends (conveniently normalized to 1) t = current time (T is normalized = 1, so t is a time fraction)</p>
+<p>s = current market mid price<br> q = quantity of assets in inventory of base asset (could be positive/negative for long/short positions)<br> σ = market volatility<br> T = closing time, when the measurement period ends (conveniently normalized to 1)<br> t = current time (T is normalized = 1, so t is a time fraction)<br></p>
 <p>The second sets optimal bid-ask spread using the equation:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -162,9 +165,9 @@ ul.task-list li input[type="checkbox"] {
 <figcaption>Optimal Bid-Ask Spread</figcaption>
 </figure>
 </div>
-<p>σ = market volatility T = closing time, when the measurement period ends (conveniently normalized to 1) t = current time (T is normalized = 1, so t is a time fraction) δa, δb = bid/ask spread, symmetrical → δa=δb γ = inventory risk aversion parameter κ = order book liquidity parameter</p>
+<p>σ = market volatility<br> T = closing time, when the measurement period ends (conveniently normalized to 1)<br> t = current time (T is normalized = 1, so t is a time fraction)<br> δa, δb = bid/ask spread, symmetrical → δa=δb<br> γ = inventory risk aversion parameter<br> κ = order book liquidity parameter<br></p>
 <p>Entry conditions: We want to create symmetrical bid and ask orders around the market mid-price, but this could lead to the inventory skewing in one direction if there are significant market movements in one direction. The reference price is where the buy and sell orders will be created around.</p>
-<p>After calculating reservation price and optimal bid ask spreads: Bid offer price = reservation price — optimal spread / 2 Ask offer price = reservation price + optimal spread / 2</p>
+<p>After calculating reservation price and optimal bid ask spreads:<br> Bid offer price = reservation price — optimal spread / 2<br> Ask offer price = reservation price + optimal spread / 2<br></p>
 <p>We then enter into limit orders on both sides of this quote.</p>
 <p>Exit conditions: As the trading day goes on, each parameter of the models will change, and new values for reservation price and optimal spreads will be calculated. We then set new orders based on the new parameters. This cycle continues indefinitely until the end of our backtesting period.</p>
 <p>Stop Loss: Instead of setting a specific stop loss, we set inventory limits to try and control the portfolio during momentum shifts. We set this at 15.</p>
@@ -172,9 +175,9 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="blotter" class="level3">
 <h3 class="anchored" data-anchor-id="blotter">Blotter:</h3>
-<div id="e317c6bb" class="cell" data-execution_count="1">
+<div id="49b3dbef" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
-<table id="itables_231b21ee_92a4_406e_be02_a3cbee919612" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto;margin:auto;caption-side:bottom">
+<table id="itables_1ebc9c1e_c7f3_4592_b302_57aa970337f7" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto;margin:auto;caption-side:bottom">
 <thead>
     <tr style="text-align: right;">
       
@@ -253,7 +256,7 @@ Loading ITables v2.3.0 from the internet...
 <script type="module">
     import {DataTable, jQuery as $} from 'https://www.unpkg.com/dt_for_itables@2.2.0/dt_bundle.js';
 
-    document.querySelectorAll("#itables_231b21ee_92a4_406e_be02_a3cbee919612:not(.dataTable)").forEach(table => {
+    document.querySelectorAll("#itables_1ebc9c1e_c7f3_4592_b302_57aa970337f7:not(.dataTable)").forEach(table => {
         if (!(table instanceof HTMLTableElement))
             return;
 
@@ -273,9 +276,9 @@ Loading ITables v2.3.0 from the internet...
 </section>
 <section id="ledger" class="level3">
 <h3 class="anchored" data-anchor-id="ledger">Ledger:</h3>
-<div id="ae2fdd72" class="cell" data-execution_count="2">
+<div id="d08467cf" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
-<table id="itables_81e74f49_4b84_4d76_8f60_04da4cea94fe" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto;margin:auto;caption-side:bottom">
+<table id="itables_8cad3dc0_135d_4017_9de7_53253cf16cb3" class="display nowrap" data-quarto-disable-processing="true" style="table-layout:auto;width:auto;margin:auto;caption-side:bottom">
 <thead>
     <tr style="text-align: right;">
       
@@ -353,7 +356,7 @@ Loading ITables v2.3.0 from the internet...
 <script type="module">
     import {DataTable, jQuery as $} from 'https://www.unpkg.com/dt_for_itables@2.2.0/dt_bundle.js';
 
-    document.querySelectorAll("#itables_81e74f49_4b84_4d76_8f60_04da4cea94fe:not(.dataTable)").forEach(table => {
+    document.querySelectorAll("#itables_8cad3dc0_135d_4017_9de7_53253cf16cb3:not(.dataTable)").forEach(table => {
         if (!(table instanceof HTMLTableElement))
             return;
 
@@ -373,20 +376,20 @@ Loading ITables v2.3.0 from the internet...
 </section>
 <section id="portfolio-value-over-time" class="level3">
 <h3 class="anchored" data-anchor-id="portfolio-value-over-time">Portfolio Value Over Time</h3>
-<div id="85ab5f60" class="cell" data-execution_count="3">
+<div id="7353363a" class="cell" data-execution_count="3">
 <div class="cell-output cell-output-display">
-<iframe scrolling="no" width="100%" height="545px" src="iframe_figures/figure_3.html" frameborder="0" allowfullscreen=""></iframe>
+<iframe scrolling="no" width="100%" height="545px" src="iframe_figures/figure_7.html" frameborder="0" allowfullscreen=""></iframe>
 </div>
 </div>
 </section>
 <section id="inventory-level-over-time" class="level3">
 <h3 class="anchored" data-anchor-id="inventory-level-over-time">Inventory Level Over Time</h3>
-<div id="a0876ee8" class="cell" data-execution_count="4">
+<div id="bb22e662" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-display">
-<iframe scrolling="no" width="100%" height="545px" src="iframe_figures/figure_4.html" frameborder="0" allowfullscreen=""></iframe>
+<iframe scrolling="no" width="100%" height="545px" src="iframe_figures/figure_8.html" frameborder="0" allowfullscreen=""></iframe>
 </div>
 </div>
-<p>Alpha: 1.2683641851897157e-06 Beta: 0.0013455253367804282 benchmark_volatility_annualized: 0.07183856080115263 asset_volatility_annualized: 0.00022642370194626593 benchmark_geometric_mean: 0.9999813518481299 benchmark_arithmetic_mean: -1.8648325749104094e-05 asset_geometric_mean: 1.0000012432731633 asset_arithmetic_mean: 1.2432723904057614e-06 Sharpe Ratio: 0.005490910976717492 Average Return per Trade: 1.2608092485550546 Average Number of Trades per Year: 4357.810344827586</p>
+<p>Alpha: 1.2683641851897157e-06<br> Beta: 0.0013455253367804282<br> benchmark_volatility_annualized: 0.07183856080115263<br> asset_volatility_annualized: 0.00022642370194626593<br> benchmark_geometric_mean: 0.9999813518481299<br> benchmark_arithmetic_mean: -1.8648325749104094e-05<br> asset_geometric_mean: 1.0000012432731633<br> asset_arithmetic_mean: 1.2432723904057614e-06<br> Sharpe Ratio: 0.005490910976717492<br> Average Return per Trade: 1.2608092485550546<br> Average Number of Trades per Year: 4357.810344827586<br></p>
 
 
 </section>
