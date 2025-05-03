@@ -11,7 +11,7 @@ jupyter: python3
 
 ### **Strategy Overview** {.test}
 Market makers are large financial institutions who act as intermediaries between buyers and sellers. They provide liquidity to traders, taking orders on both sides and reducing the difference between ask and bid price for assets. Market makers make profit from bid ask spreads.
-Our strategy is market-making on the Mag7 stocks, which includes Alphabet, Amazon, Apple, Meta, Microsoft, NVDIA, and Tesla. We will use the Stoikov market-making strategy, so we will need two main equations:
+Our strategy is market-making on one of the Mag7 stocks, which includes Alphabet, Amazon, Apple, Meta, Microsoft, NVDIA, and Tesla. For our example, we will do MSFT. We will use the Stoikov market-making strategy, so we need two main equations:
 The first calculates the reservation price based on the equation:
 
 ![Reservation Price](Equation.png)
@@ -47,29 +47,10 @@ Exit conditions:
 As the trading day goes on, each parameter of the models will change, and new values for reservation price and optimal spreads will be calculated. We then  set new orders based on the new parameters. This cycle continues indefinitely until the end of our backtesting period.
 
 Stop Loss:
-We will use average true range (ATR) to set a stop loss, around 2x ATR. This adjusts our stop loss based on volatility.
-
-Higher ATR → Widen stops to avoid noise and premature execution.
-Lower ATR → Tighten stops to lock in profits and exit in cases of volatility spikes.
+Instead of setting a specific stop loss, we set inventory limits to try and control the portfolio during momentum shifts. We set this at 15.
 
 Data:
-We can use ShinyBroker to obtain most of the assets’ attributes, such as price throughout the day, volatility, and timing, via fetch_historical_data. We also need to get technical indicators like ATR, which we can use an external Python library for, like Technical Analysis’ ta.volatility.AverageTrueRange().
-
-Here are the 7 stocks that we trade and their tickers.
-
-
-#
-| Company Name | Ticker Symbol |
-|--------------|:--------------|
-| Apple              | AAPL   |
-| Microsoft          | MSFT   |
-| Amazon             | AMZN   |
-| Alphabet (Google)  | GOOGL  |
-| Meta Platforms     | META   |
-| Nvidia             | NVDA   |
-| Tesla              | TSLA   |
-
-: Mag7 stocks: Company Name, Ticker Symbol
+We can use ShinyBroker to obtain most of the assets’ attributes, such as price throughout the day, volatility, and timing, via fetch_historical_data.
 
 
 ### Blotter:
