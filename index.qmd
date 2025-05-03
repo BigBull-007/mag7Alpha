@@ -141,3 +141,15 @@ fig = px.line(
 fig.show()
 
 ```
+
+Alpha: 1.2683641851897157e-06
+Beta: 0.0013455253367804282
+benchmark_volatility_annualized: 0.07183856080115263
+asset_volatility_annualized: 0.00022642370194626593
+benchmark_geometric_mean: 0.9999813518481299
+benchmark_arithmetic_mean: -1.8648325749104094e-05
+asset_geometric_mean: 1.0000012432731633
+asset_arithmetic_mean: 1.2432723904057614e-06
+Sharpe Ratio: 0.005490910976717492
+Average Return per Trade: 1.2608092485550546
+Average Number of Trades per Year: 4357.810344827586
