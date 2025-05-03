@@ -1,0 +1,209 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"Mag7Alpha\"\n",
+        "format:\n",
+        "  html:\n",
+        "    engine: jupyter\n",
+        "execute:\n",
+        "  echo: true\n",
+        "  eval: true\n",
+        "jupyter: python3\n",
+        "---\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "### **Strategy Overview** {.test}\n",
+        "Market makers are large financial institutions who act as intermediaries between buyers and sellers. They provide liquidity to traders, taking orders on both sides and reducing the difference between ask and bid price for assets. Market makers make profit from bid ask spreads.\n",
+        "Our strategy is market-making on one of the Mag7 stocks, which includes Alphabet, Amazon, Apple, Meta, Microsoft, NVDIA, and Tesla. For our example, we will do MSFT. We will use the Stoikov market-making strategy, so we need two main equations:\n",
+        "The first calculates the reservation price based on the equation:\n",
+        "\n",
+        "![Reservation Price](Equation.png)\n",
+        "\n",
+        "s = current market mid price\n",
+        "q = quantity of assets in inventory of base asset (could be positive/negative for long/short positions)\n",
+        "σ = market volatility\n",
+        "T = closing time, when the measurement period ends (conveniently normalized to 1)\n",
+        "t = current time (T is normalized = 1, so t is a time fraction)\n",
+        "\n",
+        "The second sets optimal bid-ask spread using the equation:\n",
+        "\n",
+        "![Optimal Bid-Ask Spread](BidaskSpread.png)\n",
+        "\n",
+        "σ = market volatility\n",
+        "T = closing time, when the measurement period ends (conveniently normalized to 1)\n",
+        "t = current time (T is normalized = 1, so t is a time fraction)\n",
+        "δa, δb = bid/ask spread, symmetrical → δa=δb\n",
+        "γ = inventory risk aversion parameter\n",
+        "κ = order book liquidity parameter\n",
+        "\n",
+        "Entry conditions:\n",
+        "We want to create symmetrical bid and ask orders around the market mid-price, but this could lead to the inventory skewing in one direction if there are significant market movements in one direction. The reference price is where the buy and sell orders will be created around.\n",
+        "\n",
+        "After calculating reservation price and optimal bid ask spreads:\n",
+        "Bid offer price = reservation price — optimal spread / 2\n",
+        "Ask offer price = reservation price + optimal spread / 2\n",
+        "\n",
+        "We then enter into limit orders on both sides of this quote.\n",
+        "\n",
+        "\n",
+        "Exit conditions:\n",
+        "As the trading day goes on, each parameter of the models will change, and new values for reservation price and optimal spreads will be calculated. We then  set new orders based on the new parameters. This cycle continues indefinitely until the end of our backtesting period.\n",
+        "\n",
+        "Stop Loss:\n",
+        "Instead of setting a specific stop loss, we set inventory limits to try and control the portfolio during momentum shifts. We set this at 15.\n",
+        "\n",
+        "Data:\n",
+        "We can use ShinyBroker to obtain most of the assets’ attributes, such as price throughout the day, volatility, and timing, via fetch_historical_data.\n",
+        "\n",
+        "\n",
+        "### Blotter:\n"
+      ],
+      "id": "9f9f7665"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "from itables import show\n",
+        "import itables.options as opt\n",
+        "\n",
+        "opt.mode = \"inline\"\n",
+        "\n",
+        "# Read the blotter CSV\n",
+        "blotter = pd.read_csv(\"blotter.csv\")\n",
+        "\n",
+        "show(blotter)"
+      ],
+      "id": "05732ad3",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "### Ledger:\n"
+      ],
+      "id": "d24f6d20"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "from itables import show\n",
+        "import itables.options as opt\n",
+        "\n",
+        "opt.mode = \"inline\"\n",
+        "\n",
+        "# Read the ledger CSV\n",
+        "ledger = pd.read_csv(\"ledger.csv\")\n",
+        "\n",
+        "show(ledger)"
+      ],
+      "id": "8ec9f2ba",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "### Portfolio Value Over Time\n"
+      ],
+      "id": "0d842b1c"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import plotly.express as px\n",
+        "import plotly.io as pio\n",
+        "\n",
+        "pio.renderers.default = \"iframe_connected\"\n",
+        "\n",
+        "# Load ledger\n",
+        "ledger = pd.read_csv(\"ledger.csv\")\n",
+        "ledger['timestamp'] = pd.to_datetime(ledger['timestamp'])\n",
+        "\n",
+        "# Create line chart of portfolio value\n",
+        "fig = px.line(\n",
+        "    ledger,\n",
+        "    x='timestamp',\n",
+        "    y='portfolio_value',\n",
+        "    title='Portfolio Value Over Time',\n",
+        "    labels={'timestamp': 'Time', 'portfolio_value': 'Portfolio Value ($)'},\n",
+        "    template='plotly_white'\n",
+        ")\n",
+        "fig.update_layout(\n",
+        "    yaxis_tickformat=',',  # Adds commas: e.g., 100,000\n",
+        ")\n",
+        "fig.show()"
+      ],
+      "id": "74d5cdc5",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "### Inventory Level Over Time\n"
+      ],
+      "id": "7638eaca"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "#| echo: false\n",
+        "import pandas as pd\n",
+        "import plotly.express as px\n",
+        "import plotly.io as pio\n",
+        "\n",
+        "pio.renderers.default = \"iframe_connected\"\n",
+        "\n",
+        "# Load data\n",
+        "ledger = pd.read_csv(\"ledger.csv\")\n",
+        "ledger['timestamp'] = pd.to_datetime(ledger['timestamp'])\n",
+        "\n",
+        "# Create chart\n",
+        "fig = px.line(\n",
+        "    ledger,\n",
+        "    x='timestamp',\n",
+        "    y='inventory',\n",
+        "    title='Inventory Over Time',\n",
+        "    labels={'inventory': 'Inventory Level', 'timestamp': 'Time'},\n",
+        "    template='plotly_white'\n",
+        ")\n",
+        "\n",
+        "# Show chart\n",
+        "fig.show()"
+      ],
+      "id": "54d2ff82",
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "C:\\Users\\maavadha\\AppData\\Local\\Programs\\Python\\Python313\\share\\jupyter\\kernels\\python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
