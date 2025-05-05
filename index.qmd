@@ -9,6 +9,10 @@ execute:
 jupyter: python3
 ---
 
+::: {.video}
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=GEBxAzIoK8Q" frameborder="0" allowfullscreen></iframe>
+:::
+
 ### **Strategy Overview** {.test}
 Market makers are large financial institutions who act as intermediaries between buyers and sellers. They provide liquidity to traders, taking orders on both sides and reducing the difference between ask and bid price for assets. Market makers make profit from bid ask spreads.
 Our strategy is market-making on one of the Mag7 stocks, which includes Alphabet, Amazon, Apple, Meta, Microsoft, NVDIA, and Tesla. For our example, we will do MSFT. We will use the Stoikov market-making strategy, so we need two main equations:
