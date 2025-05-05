@@ -9,9 +9,12 @@ execute:
 jupyter: python3
 ---
 
-::: {.video}
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=GEBxAzIoK8Q" frameborder="0" allowfullscreen></iframe>
+::: {.youtube width=560 height=315}
+https://www.youtube.com/watch?v=GEBxAzIoK8Q&feature=youtu.be
 :::
+
+{{< video https://www.youtube.com/watch?v=GEBxAzIoK8Q&feature=youtu.be width="600" height="400" start="10" >}}
+
 
 ### **Strategy Overview** {.test}
 Market makers are large financial institutions who act as intermediaries between buyers and sellers. They provide liquidity to traders, taking orders on both sides and reducing the difference between ask and bid price for assets. Market makers make profit from bid ask spreads.
